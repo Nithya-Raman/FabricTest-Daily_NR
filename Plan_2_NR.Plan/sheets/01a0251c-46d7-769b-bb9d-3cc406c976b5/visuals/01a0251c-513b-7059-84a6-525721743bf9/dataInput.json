@@ -1,0 +1,28 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/plan/definition/Planning/DataInput/1.0.0/schema.json",
+  "columns": [
+    {
+      "boundToFilterContext": 10,
+      "columnMeta": {
+        "data_type": "Number",
+        "description": null,
+        "id": "2759107058914755561",
+        "label": "Total Budget",
+        "measure_type": {
+          "Native": {
+            "measure_role": "ACMeasure"
+          }
+        },
+        "name": "Total Budget"
+      },
+      "dataInputType": 6,
+      "description": null,
+      "measureGuid": "2759107058914755561",
+      "name": "Total Budget",
+      "sidecarHydrationLeaseAt": null,
+      "sidecarHydrationStatus": 10,
+      "status": 10,
+      "visualId": "01a0251c-513b-7059-84a6-525721743bf9"
+    }
+  ]
+}
