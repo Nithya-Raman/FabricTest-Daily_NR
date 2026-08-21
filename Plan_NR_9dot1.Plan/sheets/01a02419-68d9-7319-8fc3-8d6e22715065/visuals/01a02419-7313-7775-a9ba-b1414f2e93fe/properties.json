@@ -192,6 +192,7 @@
       "x": 0.0049935375,
       "y": 0.004981955555555556
     },
+    "preVisualId": "1",
     "shapeType": "RECTANGLE",
     "sortingConfig": [],
     "splitByCategory": {
@@ -1043,6 +1044,10 @@
         "verticalMinorGridLines": "solid"
       },
       "isReadModeConfigModified": true,
+      "layout": {
+        "layout_type": "Table",
+        "measure_layout": null
+      },
       "locale": "en-US",
       "manage_measures": [
         {
@@ -1297,6 +1302,7 @@
           "export": true
         }
       },
+      "reportMode": "EDIT",
       "rowDimensions": [
         {
           "externalKey": "[DimProduct[[H] Product Hierarchy]]~||~DimProduct[ClassName]",
@@ -1323,6 +1329,23 @@
           "label": "ProductSubcategoryName"
         }
       ],
+      "ruler": {
+        "activeSummaryGroup": null,
+        "disabled": {
+          "prevEnabledState": null,
+          "state": false
+        },
+        "enabled": true,
+        "rulerMeta": {
+          "showNumbers": false,
+          "width": 20
+        }
+      },
+      "tableState": {
+        "columnExpandCollapseIcon": "arrows",
+        "columnHierarchyLevel": {},
+        "expandCollapseIcon": "none"
+      },
       "themeColors": {
         "chartTheme": "trafficlights",
         "enableRowHover": "rowAlternate",
@@ -1345,9 +1368,9 @@
       "totals_config": {
         "column_grand_total": "Left",
         "column_sub_total": null,
-        "freeze_total": false,
+        "freeze_total": true,
         "row_grand_total": "Top",
-        "row_sub_total": "Top"
+        "row_sub_total": null
       },
       "visualStyles": {
         "background": {
