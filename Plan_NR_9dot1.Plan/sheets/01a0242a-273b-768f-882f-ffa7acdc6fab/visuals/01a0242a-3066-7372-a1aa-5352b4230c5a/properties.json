@@ -150,6 +150,7 @@
       "x": 0.0049935375,
       "y": 0.004981955555555556
     },
+    "preVisualId": "6",
     "shapeType": "RECTANGLE",
     "sortingConfig": [],
     "splitByCategory": {
@@ -826,6 +827,10 @@
         "verticalMinorGridColor": "#E6E6E6",
         "verticalMinorGridLines": "solid"
       },
+      "layout": {
+        "layout_type": "Tree",
+        "measure_layout": null
+      },
       "locale": "en-US",
       "manage_measures": [
         {
@@ -1068,6 +1073,7 @@
           "export": true
         }
       },
+      "reportMode": "EDIT",
       "rowDimensions": [
         {
           "externalKey": "[DimProduct[[H] Product Hierarchy]]~||~DimProduct[ClassName]",
