@@ -1,0 +1,64 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/plan/definition/Planning/DataInput/1.0.0/schema.json",
+  "columns": [
+    {
+      "boundToFilterContext": 10,
+      "columnMeta": {
+        "data_type": "Number",
+        "description": null,
+        "id": "2759107058914755561",
+        "label": "Total Budget",
+        "measure_type": {
+          "Native": {
+            "measure_role": "ACMeasure"
+          }
+        },
+        "name": "Total Budget"
+      },
+      "dataInputType": 6,
+      "description": null,
+      "measureGuid": "2759107058914755561",
+      "name": "Total Budget",
+      "sidecarHydrationLeaseAt": null,
+      "sidecarHydrationStatus": 10,
+      "status": 10,
+      "visualId": "01a0242a-3066-7372-a1aa-5352b4230c5a"
+    },
+    {
+      "boundToFilterContext": 20,
+      "columnMeta": {
+        "data_type": "Number",
+        "description": "",
+        "id": "13796320413301095616",
+        "label": "Cube Measure",
+        "measure_type": {
+          "DataInput": {
+            "allow_input": "ReadAndEdit",
+            "bound_to_filter_context": true,
+            "column_type": {
+              "Number": {
+                "default_value": null,
+                "distribute_parent_value_to_children": true,
+                "max_value": null,
+                "min_value": null
+              }
+            },
+            "cube_partition_measure_id": "D079C085-579D-F111-A6AA-6045BD73E89F",
+            "disable_write_access": false,
+            "id": "",
+            "on_change_formula": "",
+            "title": "Cube Measure"
+          }
+        }
+      },
+      "dataInputType": 6,
+      "description": null,
+      "measureGuid": "13796320413301095616",
+      "name": "Cube Measure",
+      "sidecarHydrationLeaseAt": null,
+      "sidecarHydrationStatus": 10,
+      "status": 10,
+      "visualId": "01a0242a-3066-7372-a1aa-5352b4230c5a"
+    }
+  ]
+}

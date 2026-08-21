@@ -2,7 +2,10 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/plan/definition/Definition/1.0.0/schema.json",
   "appDBconnection": "57a11f6c-1a5f-4d0e-b99e-d04f851d48ca",
   "cube": {
-    "partitionRefIds": []
+    "partitionRefIds": [
+      "CE79C085-579D-F111-A6AA-6045BD73E89F",
+      "CF79C085-579D-F111-A6AA-6045BD73E89F"
+    ]
   },
   "semanticModelReference": {
     "artifactId": 5310472,
@@ -88,6 +91,60 @@
           "isEmbedded": false,
           "visualId": "01a02425-8e46-75f5-9893-5253c399e002",
           "visualType": "POWERTABLE"
+        }
+      ]
+    },
+    {
+      "displayName": "Planning 3",
+      "isHidden": false,
+      "recordGuid": "01a0242a-273b-768f-882f-ffa7acdc6fab",
+      "sheetType": "PLANNING",
+      "workloadItemEntityVisuals": [
+        {
+          "isEmbedded": false,
+          "visualId": "01a0242a-3066-7372-a1aa-5352b4230c5a",
+          "visualType": "PLANNING"
+        }
+      ]
+    },
+    {
+      "displayName": "Planning 4",
+      "isHidden": false,
+      "recordGuid": "01a02430-a9bd-72e1-844c-ed0fc0cd037d",
+      "sheetType": "PLANNING",
+      "workloadItemEntityVisuals": [
+        {
+          "isEmbedded": false,
+          "visualId": "01a02430-bbd9-748f-a60a-30e026f0ba10",
+          "visualType": "PLANNING"
+        }
+      ]
+    },
+    {
+      "displayName": "Intelligence 2",
+      "isHidden": false,
+      "recordGuid": "01a02434-1cd8-769a-83f8-4a15e3c96df3",
+      "sheetType": "REPORTING",
+      "workloadItemEntityVisuals": [
+        {
+          "isEmbedded": true,
+          "visualId": "01a02425-8e46-75f5-9893-5253c399e002",
+          "visualType": "POWERTABLE"
+        },
+        {
+          "isEmbedded": true,
+          "visualId": "01a0242a-3066-7372-a1aa-5352b4230c5a",
+          "visualType": "PLANNING"
+        },
+        {
+          "isEmbedded": false,
+          "visualId": "01a02434-da38-7453-880f-4ea165ca509e",
+          "visualType": "ANALYTICS_PLUS"
+        },
+        {
+          "isEmbedded": false,
+          "visualId": "01a02435-db7f-71ac-b24f-71bb53435c13",
+          "visualType": "ANALYTICS_PLUS"
         }
       ]
     }

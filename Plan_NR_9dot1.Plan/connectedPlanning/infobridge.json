@@ -1380,6 +1380,769 @@
       "sourceGuid": "DE03601D-559D-F111-A6AA-6045BD73E89F",
       "type": "PLANNING",
       "visualId": "01A02419-7313-7775-A9BA-B1414F2E93FE"
+    },
+    {
+      "meta": {
+        "columnCount": 19,
+        "columns": [],
+        "dateColumns": [],
+        "dimensions": [
+          {
+            "alias": "SKU",
+            "id": "40c307f969042a7bf120deff6f257974fd49b60272d48165c165e567b788f9ef",
+            "isTimeInterval": false,
+            "level": 0,
+            "name": "SKU",
+            "timeIntervalUnit": null
+          },
+          {
+            "alias": "ProductName",
+            "id": "0ad5ccb0d6265c6777b0ef179bc735cda78ff192fd10efc2cc8279f8c1c448db",
+            "isTimeInterval": false,
+            "level": 0,
+            "name": "ProductName",
+            "timeIntervalUnit": null
+          },
+          {
+            "alias": "Description",
+            "id": "76d6157cad8e29a0fe1d3a2a912d593e850288255d2c4941c80d42af813f5b91",
+            "isTimeInterval": false,
+            "level": 0,
+            "name": "Description",
+            "timeIntervalUnit": null
+          },
+          {
+            "alias": "Brand",
+            "id": "d291ce48e49ff986a3c8796b92f68fad454ed2f6701e8e0885eeaa270ffddc8b",
+            "isTimeInterval": false,
+            "level": 0,
+            "name": "Brand",
+            "timeIntervalUnit": null
+          },
+          {
+            "alias": "Manufacturer",
+            "id": "804f1a47d3607be57eb6b3ab022c065f1e1d5f15f3e61451ac35a491cb554790",
+            "isTimeInterval": false,
+            "level": 0,
+            "name": "Manufacturer",
+            "timeIntervalUnit": null
+          },
+          {
+            "alias": "Department",
+            "id": "de169ef193777693f766f1e8cda1a48a13ebe7ac1329f1238361b0fda5ae2472",
+            "isTimeInterval": false,
+            "level": 0,
+            "name": "Department",
+            "timeIntervalUnit": null
+          },
+          {
+            "alias": "Category",
+            "id": "566049a412d1182add588e703c40694043d613866e081246707b317e94fe822b",
+            "isTimeInterval": false,
+            "level": 0,
+            "name": "Category",
+            "timeIntervalUnit": null
+          },
+          {
+            "alias": "SubCategory",
+            "id": "0e7e2f1b3b26802ae3c3028e27aaaa0e32d1f16fe9e57ca1ab33cd5cde6d8e6a",
+            "isTimeInterval": false,
+            "level": 0,
+            "name": "SubCategory",
+            "timeIntervalUnit": null
+          },
+          {
+            "alias": "ValidFromDate",
+            "id": "6c5321c33b78fc97f92de38570eb04347148f64160aa893430aac215c7a3d58d",
+            "isTimeInterval": false,
+            "level": 0,
+            "name": "ValidFromDate",
+            "timeIntervalUnit": null
+          },
+          {
+            "alias": "ValidToDate",
+            "id": "a9d448d29e0c3f71bf78f8a08496683456479933f5934e38c15c0708a1d8dcc4",
+            "isTimeInterval": false,
+            "level": 0,
+            "name": "ValidToDate",
+            "timeIntervalUnit": null
+          },
+          {
+            "alias": "IsCurrentFlag",
+            "id": "8b36892511aad79a60602ef8663442361b1b5c537e067c62fc1cf97683bbe60b",
+            "isTimeInterval": false,
+            "level": 0,
+            "name": "IsCurrentFlag",
+            "timeIntervalUnit": null
+          }
+        ],
+        "hierarchyColumns": [],
+        "measures": [
+          {
+            "aggregationType": "sum",
+            "alias": "ProductID",
+            "columnType": "IB Measure",
+            "dataType": "NUMERIC",
+            "id": "2afd011eba99aad9d1a867ece1bdbc364516f16830ac7690c704ff15f3f0671b",
+            "name": "ProductID",
+            "type": "DOUBLE"
+          },
+          {
+            "aggregationType": "sum",
+            "alias": "UPC",
+            "columnType": "IB Measure",
+            "dataType": "NUMERIC",
+            "id": "67aee52e1cdc64263219e301b99f4e81b2adffa19ecc13ae6dc8cbf4d38f27b7",
+            "name": "UPC",
+            "type": "DOUBLE"
+          },
+          {
+            "aggregationType": "sum",
+            "alias": "BaseRetailPrice",
+            "columnType": "IB Measure",
+            "dataType": "NUMERIC",
+            "id": "769ac36b8c38f2185127abf5f16c3197b1e9491de50e20f08875d10f35b08ae6",
+            "name": "BaseRetailPrice",
+            "type": "DOUBLE"
+          },
+          {
+            "aggregationType": "sum",
+            "alias": "UnitCost",
+            "columnType": "IB Measure",
+            "dataType": "NUMERIC",
+            "id": "49f0ea424e8dbc78cd0219767f2a9842a8b5c1df62ca498628f935d2782e3d7c",
+            "name": "UnitCost",
+            "type": "DOUBLE"
+          },
+          {
+            "aggregationType": "sum",
+            "alias": "Weight",
+            "columnType": "IB Measure",
+            "dataType": "NUMERIC",
+            "id": "87435991c027975b951536d7a44a5bb1bdd3b37112368f0b994cdbda134cd3e0",
+            "name": "Weight",
+            "type": "DOUBLE"
+          },
+          {
+            "aggregationType": "sum",
+            "alias": "Length",
+            "columnType": "IB Measure",
+            "dataType": "NUMERIC",
+            "id": "0c4c908b9c35b9f98a6baa6e2ff05b5662518b43017435e068d5dc5b9994a545",
+            "name": "Length",
+            "type": "DOUBLE"
+          },
+          {
+            "aggregationType": "sum",
+            "alias": "Width",
+            "columnType": "IB Measure",
+            "dataType": "NUMERIC",
+            "id": "f61de9c00d5e85d5b486cd4a9ead8c87aeb993e85181756d7d828e8531f9a0f2",
+            "name": "Width",
+            "type": "DOUBLE"
+          },
+          {
+            "aggregationType": "sum",
+            "alias": "Height",
+            "columnType": "IB Measure",
+            "dataType": "NUMERIC",
+            "id": "3fa548240c9394292bc716ab806d52dfb54e698bb35e9232a1e8ff951d3e9a71",
+            "name": "Height",
+            "type": "DOUBLE"
+          }
+        ],
+        "parquetVersion": "v1",
+        "recordCount": 5000,
+        "selectedColumns": [],
+        "selectedDateColumns": [],
+        "selectedDimensions": [
+          {
+            "alias": "SKU",
+            "dataType": "TEXT_COLUMN",
+            "id": "40c307f969042a7bf120deff6f257974fd49b60272d48165c165e567b788f9ef",
+            "isTimeInterval": false,
+            "level": 0,
+            "name": "SKU",
+            "timeIntervalUnit": null
+          },
+          {
+            "alias": "ProductName",
+            "dataType": "TEXT_COLUMN",
+            "id": "0ad5ccb0d6265c6777b0ef179bc735cda78ff192fd10efc2cc8279f8c1c448db",
+            "isTimeInterval": false,
+            "level": 0,
+            "name": "ProductName",
+            "timeIntervalUnit": null
+          },
+          {
+            "alias": "Description",
+            "dataType": "TEXT_COLUMN",
+            "id": "76d6157cad8e29a0fe1d3a2a912d593e850288255d2c4941c80d42af813f5b91",
+            "isTimeInterval": false,
+            "level": 0,
+            "name": "Description",
+            "timeIntervalUnit": null
+          },
+          {
+            "alias": "Brand",
+            "dataType": "TEXT_COLUMN",
+            "id": "d291ce48e49ff986a3c8796b92f68fad454ed2f6701e8e0885eeaa270ffddc8b",
+            "isTimeInterval": false,
+            "level": 0,
+            "name": "Brand",
+            "timeIntervalUnit": null
+          },
+          {
+            "alias": "Manufacturer",
+            "dataType": "TEXT_COLUMN",
+            "id": "804f1a47d3607be57eb6b3ab022c065f1e1d5f15f3e61451ac35a491cb554790",
+            "isTimeInterval": false,
+            "level": 0,
+            "name": "Manufacturer",
+            "timeIntervalUnit": null
+          },
+          {
+            "alias": "Department",
+            "dataType": "TEXT_COLUMN",
+            "id": "de169ef193777693f766f1e8cda1a48a13ebe7ac1329f1238361b0fda5ae2472",
+            "isTimeInterval": false,
+            "level": 0,
+            "name": "Department",
+            "timeIntervalUnit": null
+          },
+          {
+            "alias": "Category",
+            "dataType": "TEXT_COLUMN",
+            "id": "566049a412d1182add588e703c40694043d613866e081246707b317e94fe822b",
+            "isTimeInterval": false,
+            "level": 0,
+            "name": "Category",
+            "timeIntervalUnit": null
+          },
+          {
+            "alias": "SubCategory",
+            "dataType": "TEXT_COLUMN",
+            "id": "0e7e2f1b3b26802ae3c3028e27aaaa0e32d1f16fe9e57ca1ab33cd5cde6d8e6a",
+            "isTimeInterval": false,
+            "level": 0,
+            "name": "SubCategory",
+            "timeIntervalUnit": null
+          },
+          {
+            "alias": "ValidFromDate",
+            "dataType": "TEXT_COLUMN",
+            "id": "6c5321c33b78fc97f92de38570eb04347148f64160aa893430aac215c7a3d58d",
+            "isTimeInterval": false,
+            "level": 0,
+            "name": "ValidFromDate",
+            "timeIntervalUnit": null
+          },
+          {
+            "alias": "ValidToDate",
+            "dataType": "TEXT_COLUMN",
+            "id": "a9d448d29e0c3f71bf78f8a08496683456479933f5934e38c15c0708a1d8dcc4",
+            "isTimeInterval": false,
+            "level": 0,
+            "name": "ValidToDate",
+            "timeIntervalUnit": null
+          },
+          {
+            "alias": "IsCurrentFlag",
+            "dataType": "TEXT_COLUMN",
+            "id": "8b36892511aad79a60602ef8663442361b1b5c537e067c62fc1cf97683bbe60b",
+            "isTimeInterval": false,
+            "level": 0,
+            "name": "IsCurrentFlag",
+            "timeIntervalUnit": null
+          }
+        ],
+        "selectedHierarchyColumns": [],
+        "selectedMeasures": [
+          {
+            "aggregationType": "sum",
+            "alias": "ProductID",
+            "columnType": "IB Measure",
+            "dataType": "NUMERIC",
+            "id": "2afd011eba99aad9d1a867ece1bdbc364516f16830ac7690c704ff15f3f0671b",
+            "name": "ProductID",
+            "type": "DOUBLE"
+          },
+          {
+            "aggregationType": "sum",
+            "alias": "UPC",
+            "columnType": "IB Measure",
+            "dataType": "NUMERIC",
+            "id": "67aee52e1cdc64263219e301b99f4e81b2adffa19ecc13ae6dc8cbf4d38f27b7",
+            "name": "UPC",
+            "type": "DOUBLE"
+          },
+          {
+            "aggregationType": "sum",
+            "alias": "BaseRetailPrice",
+            "columnType": "IB Measure",
+            "dataType": "NUMERIC",
+            "id": "769ac36b8c38f2185127abf5f16c3197b1e9491de50e20f08875d10f35b08ae6",
+            "name": "BaseRetailPrice",
+            "type": "DOUBLE"
+          },
+          {
+            "aggregationType": "sum",
+            "alias": "UnitCost",
+            "columnType": "IB Measure",
+            "dataType": "NUMERIC",
+            "id": "49f0ea424e8dbc78cd0219767f2a9842a8b5c1df62ca498628f935d2782e3d7c",
+            "name": "UnitCost",
+            "type": "DOUBLE"
+          },
+          {
+            "aggregationType": "sum",
+            "alias": "Weight",
+            "columnType": "IB Measure",
+            "dataType": "NUMERIC",
+            "id": "87435991c027975b951536d7a44a5bb1bdd3b37112368f0b994cdbda134cd3e0",
+            "name": "Weight",
+            "type": "DOUBLE"
+          },
+          {
+            "aggregationType": "sum",
+            "alias": "Length",
+            "columnType": "IB Measure",
+            "dataType": "NUMERIC",
+            "id": "0c4c908b9c35b9f98a6baa6e2ff05b5662518b43017435e068d5dc5b9994a545",
+            "name": "Length",
+            "type": "DOUBLE"
+          },
+          {
+            "aggregationType": "sum",
+            "alias": "Width",
+            "columnType": "IB Measure",
+            "dataType": "NUMERIC",
+            "id": "f61de9c00d5e85d5b486cd4a9ead8c87aeb993e85181756d7d828e8531f9a0f2",
+            "name": "Width",
+            "type": "DOUBLE"
+          },
+          {
+            "aggregationType": "sum",
+            "alias": "Height",
+            "columnType": "IB Measure",
+            "dataType": "NUMERIC",
+            "id": "3fa548240c9394292bc716ab806d52dfb54e698bb35e9232a1e8ff951d3e9a71",
+            "name": "Height",
+            "type": "DOUBLE"
+          }
+        ],
+        "source": {
+          "editable": {
+            "mdeDestinationId": "9C53390E-569D-F111-A6AA-6045BD73E89F",
+            "mdeSourceId": "9C53390E-569D-F111-A6AA-6045BD73E89F",
+            "mdeSuperfilter": null,
+            "mdeTableName": "retail_data_100k_Products",
+            "mdeVisualId": "01A02425-8E46-75F5-9893-5253C399E002"
+          },
+          "infoBridgeSourceType": 220
+        }
+      },
+      "name": "retail_data_100k_Products",
+      "queries": [
+        {
+          "meta": {
+            "columnCount": 19,
+            "columns": [],
+            "dateColumns": [],
+            "dateOptions": [],
+            "dimensions": [
+              {
+                "alias": "SKU",
+                "id": "40c307f969042a7bf120deff6f257974fd49b60272d48165c165e567b788f9ef",
+                "isTimeInterval": false,
+                "level": 0,
+                "name": "SKU",
+                "timeIntervalUnit": null
+              },
+              {
+                "alias": "ProductName",
+                "id": "0ad5ccb0d6265c6777b0ef179bc735cda78ff192fd10efc2cc8279f8c1c448db",
+                "isTimeInterval": false,
+                "level": 0,
+                "name": "ProductName",
+                "timeIntervalUnit": null
+              },
+              {
+                "alias": "Description",
+                "id": "76d6157cad8e29a0fe1d3a2a912d593e850288255d2c4941c80d42af813f5b91",
+                "isTimeInterval": false,
+                "level": 0,
+                "name": "Description",
+                "timeIntervalUnit": null
+              },
+              {
+                "alias": "Brand",
+                "id": "d291ce48e49ff986a3c8796b92f68fad454ed2f6701e8e0885eeaa270ffddc8b",
+                "isTimeInterval": false,
+                "level": 0,
+                "name": "Brand",
+                "timeIntervalUnit": null
+              },
+              {
+                "alias": "Manufacturer",
+                "id": "804f1a47d3607be57eb6b3ab022c065f1e1d5f15f3e61451ac35a491cb554790",
+                "isTimeInterval": false,
+                "level": 0,
+                "name": "Manufacturer",
+                "timeIntervalUnit": null
+              },
+              {
+                "alias": "Department",
+                "id": "de169ef193777693f766f1e8cda1a48a13ebe7ac1329f1238361b0fda5ae2472",
+                "isTimeInterval": false,
+                "level": 0,
+                "name": "Department",
+                "timeIntervalUnit": null
+              },
+              {
+                "alias": "Category",
+                "id": "566049a412d1182add588e703c40694043d613866e081246707b317e94fe822b",
+                "isTimeInterval": false,
+                "level": 0,
+                "name": "Category",
+                "timeIntervalUnit": null
+              },
+              {
+                "alias": "SubCategory",
+                "id": "0e7e2f1b3b26802ae3c3028e27aaaa0e32d1f16fe9e57ca1ab33cd5cde6d8e6a",
+                "isTimeInterval": false,
+                "level": 0,
+                "name": "SubCategory",
+                "timeIntervalUnit": null
+              },
+              {
+                "alias": "ValidFromDate",
+                "id": "6c5321c33b78fc97f92de38570eb04347148f64160aa893430aac215c7a3d58d",
+                "isTimeInterval": false,
+                "level": 0,
+                "name": "ValidFromDate",
+                "timeIntervalUnit": null
+              },
+              {
+                "alias": "ValidToDate",
+                "id": "a9d448d29e0c3f71bf78f8a08496683456479933f5934e38c15c0708a1d8dcc4",
+                "isTimeInterval": false,
+                "level": 0,
+                "name": "ValidToDate",
+                "timeIntervalUnit": null
+              },
+              {
+                "alias": "IsCurrentFlag",
+                "id": "8b36892511aad79a60602ef8663442361b1b5c537e067c62fc1cf97683bbe60b",
+                "isTimeInterval": false,
+                "level": 0,
+                "name": "IsCurrentFlag",
+                "timeIntervalUnit": null
+              }
+            ],
+            "flatData": true,
+            "hierarchyColumns": [],
+            "measures": [
+              {
+                "aggregationType": "sum",
+                "alias": "ProductID",
+                "columnType": "IB Measure",
+                "dataType": "NUMERIC",
+                "id": "2afd011eba99aad9d1a867ece1bdbc364516f16830ac7690c704ff15f3f0671b",
+                "name": "ProductID",
+                "type": "DOUBLE"
+              },
+              {
+                "aggregationType": "sum",
+                "alias": "UPC",
+                "columnType": "IB Measure",
+                "dataType": "NUMERIC",
+                "id": "67aee52e1cdc64263219e301b99f4e81b2adffa19ecc13ae6dc8cbf4d38f27b7",
+                "name": "UPC",
+                "type": "DOUBLE"
+              },
+              {
+                "aggregationType": "sum",
+                "alias": "BaseRetailPrice",
+                "columnType": "IB Measure",
+                "dataType": "NUMERIC",
+                "id": "769ac36b8c38f2185127abf5f16c3197b1e9491de50e20f08875d10f35b08ae6",
+                "name": "BaseRetailPrice",
+                "type": "DOUBLE"
+              },
+              {
+                "aggregationType": "sum",
+                "alias": "UnitCost",
+                "columnType": "IB Measure",
+                "dataType": "NUMERIC",
+                "id": "49f0ea424e8dbc78cd0219767f2a9842a8b5c1df62ca498628f935d2782e3d7c",
+                "name": "UnitCost",
+                "type": "DOUBLE"
+              },
+              {
+                "aggregationType": "sum",
+                "alias": "Weight",
+                "columnType": "IB Measure",
+                "dataType": "NUMERIC",
+                "id": "87435991c027975b951536d7a44a5bb1bdd3b37112368f0b994cdbda134cd3e0",
+                "name": "Weight",
+                "type": "DOUBLE"
+              },
+              {
+                "aggregationType": "sum",
+                "alias": "Length",
+                "columnType": "IB Measure",
+                "dataType": "NUMERIC",
+                "id": "0c4c908b9c35b9f98a6baa6e2ff05b5662518b43017435e068d5dc5b9994a545",
+                "name": "Length",
+                "type": "DOUBLE"
+              },
+              {
+                "aggregationType": "sum",
+                "alias": "Width",
+                "columnType": "IB Measure",
+                "dataType": "NUMERIC",
+                "id": "f61de9c00d5e85d5b486cd4a9ead8c87aeb993e85181756d7d828e8531f9a0f2",
+                "name": "Width",
+                "type": "DOUBLE"
+              },
+              {
+                "aggregationType": "sum",
+                "alias": "Height",
+                "columnType": "IB Measure",
+                "dataType": "NUMERIC",
+                "id": "3fa548240c9394292bc716ab806d52dfb54e698bb35e9232a1e8ff951d3e9a71",
+                "name": "Height",
+                "type": "DOUBLE"
+              }
+            ],
+            "parquetVersion": "v1",
+            "recordCount": 5000,
+            "selectedColumns": [],
+            "selectedDateColumns": [],
+            "selectedDimensions": [
+              {
+                "alias": "SKU",
+                "dataType": "TEXT_COLUMN",
+                "id": "40c307f969042a7bf120deff6f257974fd49b60272d48165c165e567b788f9ef",
+                "isTimeInterval": false,
+                "level": 0,
+                "name": "SKU",
+                "timeIntervalUnit": null,
+                "type": "VARCHAR"
+              },
+              {
+                "alias": "ProductName",
+                "dataType": "TEXT_COLUMN",
+                "id": "0ad5ccb0d6265c6777b0ef179bc735cda78ff192fd10efc2cc8279f8c1c448db",
+                "isTimeInterval": false,
+                "level": 0,
+                "name": "ProductName",
+                "timeIntervalUnit": null,
+                "type": "VARCHAR"
+              },
+              {
+                "alias": "Description",
+                "dataType": "TEXT_COLUMN",
+                "id": "76d6157cad8e29a0fe1d3a2a912d593e850288255d2c4941c80d42af813f5b91",
+                "isTimeInterval": false,
+                "level": 0,
+                "name": "Description",
+                "timeIntervalUnit": null,
+                "type": "VARCHAR"
+              },
+              {
+                "alias": "Brand",
+                "dataType": "TEXT_COLUMN",
+                "id": "d291ce48e49ff986a3c8796b92f68fad454ed2f6701e8e0885eeaa270ffddc8b",
+                "isTimeInterval": false,
+                "level": 0,
+                "name": "Brand",
+                "timeIntervalUnit": null,
+                "type": "VARCHAR"
+              },
+              {
+                "alias": "Manufacturer",
+                "dataType": "TEXT_COLUMN",
+                "id": "804f1a47d3607be57eb6b3ab022c065f1e1d5f15f3e61451ac35a491cb554790",
+                "isTimeInterval": false,
+                "level": 0,
+                "name": "Manufacturer",
+                "timeIntervalUnit": null,
+                "type": "VARCHAR"
+              },
+              {
+                "alias": "Department",
+                "dataType": "TEXT_COLUMN",
+                "id": "de169ef193777693f766f1e8cda1a48a13ebe7ac1329f1238361b0fda5ae2472",
+                "isTimeInterval": false,
+                "level": 0,
+                "name": "Department",
+                "timeIntervalUnit": null,
+                "type": "VARCHAR"
+              },
+              {
+                "alias": "Category",
+                "dataType": "TEXT_COLUMN",
+                "id": "566049a412d1182add588e703c40694043d613866e081246707b317e94fe822b",
+                "isTimeInterval": false,
+                "level": 0,
+                "name": "Category",
+                "timeIntervalUnit": null,
+                "type": "VARCHAR"
+              },
+              {
+                "alias": "SubCategory",
+                "dataType": "TEXT_COLUMN",
+                "id": "0e7e2f1b3b26802ae3c3028e27aaaa0e32d1f16fe9e57ca1ab33cd5cde6d8e6a",
+                "isTimeInterval": false,
+                "level": 0,
+                "name": "SubCategory",
+                "timeIntervalUnit": null,
+                "type": "VARCHAR"
+              },
+              {
+                "alias": "ValidFromDate",
+                "dataType": "DATETIME",
+                "id": "6c5321c33b78fc97f92de38570eb04347148f64160aa893430aac215c7a3d58d",
+                "isTimeInterval": false,
+                "level": 0,
+                "name": "ValidFromDate",
+                "timeIntervalUnit": null,
+                "type": "DATE"
+              },
+              {
+                "alias": "ValidToDate",
+                "dataType": "TEXT_COLUMN",
+                "id": "a9d448d29e0c3f71bf78f8a08496683456479933f5934e38c15c0708a1d8dcc4",
+                "isTimeInterval": false,
+                "level": 0,
+                "name": "ValidToDate",
+                "timeIntervalUnit": null,
+                "type": "VARCHAR"
+              },
+              {
+                "alias": "IsCurrentFlag",
+                "dataType": "TEXT_COLUMN",
+                "id": "8b36892511aad79a60602ef8663442361b1b5c537e067c62fc1cf97683bbe60b",
+                "isTimeInterval": false,
+                "level": 0,
+                "name": "IsCurrentFlag",
+                "timeIntervalUnit": null,
+                "type": "VARCHAR"
+              }
+            ],
+            "selectedHierarchyColumns": [],
+            "selectedMeasures": [
+              {
+                "aggregationType": "sum",
+                "alias": "ProductID",
+                "columnType": "IB Measure",
+                "dataType": "NUMERIC",
+                "id": "2afd011eba99aad9d1a867ece1bdbc364516f16830ac7690c704ff15f3f0671b",
+                "name": "ProductID",
+                "type": "DOUBLE"
+              },
+              {
+                "aggregationType": "sum",
+                "alias": "UPC",
+                "columnType": "IB Measure",
+                "dataType": "NUMERIC",
+                "id": "67aee52e1cdc64263219e301b99f4e81b2adffa19ecc13ae6dc8cbf4d38f27b7",
+                "name": "UPC",
+                "type": "DOUBLE"
+              },
+              {
+                "aggregationType": "sum",
+                "alias": "BaseRetailPrice",
+                "columnType": "IB Measure",
+                "dataType": "NUMERIC",
+                "id": "769ac36b8c38f2185127abf5f16c3197b1e9491de50e20f08875d10f35b08ae6",
+                "name": "BaseRetailPrice",
+                "type": "DOUBLE"
+              },
+              {
+                "aggregationType": "sum",
+                "alias": "UnitCost",
+                "columnType": "IB Measure",
+                "dataType": "NUMERIC",
+                "id": "49f0ea424e8dbc78cd0219767f2a9842a8b5c1df62ca498628f935d2782e3d7c",
+                "name": "UnitCost",
+                "type": "DOUBLE"
+              },
+              {
+                "aggregationType": "sum",
+                "alias": "Weight",
+                "columnType": "IB Measure",
+                "dataType": "NUMERIC",
+                "id": "87435991c027975b951536d7a44a5bb1bdd3b37112368f0b994cdbda134cd3e0",
+                "name": "Weight",
+                "type": "DOUBLE"
+              },
+              {
+                "aggregationType": "sum",
+                "alias": "Length",
+                "columnType": "IB Measure",
+                "dataType": "NUMERIC",
+                "id": "0c4c908b9c35b9f98a6baa6e2ff05b5662518b43017435e068d5dc5b9994a545",
+                "name": "Length",
+                "type": "DOUBLE"
+              },
+              {
+                "aggregationType": "sum",
+                "alias": "Width",
+                "columnType": "IB Measure",
+                "dataType": "NUMERIC",
+                "id": "f61de9c00d5e85d5b486cd4a9ead8c87aeb993e85181756d7d828e8531f9a0f2",
+                "name": "Width",
+                "type": "DOUBLE"
+              },
+              {
+                "aggregationType": "sum",
+                "alias": "Height",
+                "columnType": "IB Measure",
+                "dataType": "NUMERIC",
+                "id": "3fa548240c9394292bc716ab806d52dfb54e698bb35e9232a1e8ff951d3e9a71",
+                "name": "Height",
+                "type": "DOUBLE"
+              }
+            ],
+            "source": {
+              "editable": {
+                "mdeDestinationId": "9C53390E-569D-F111-A6AA-6045BD73E89F",
+                "mdeSourceId": "9C53390E-569D-F111-A6AA-6045BD73E89F",
+                "mdeSuperfilter": null,
+                "mdeTableName": "retail_data_100k_Products",
+                "mdeVisualId": "01A02425-8E46-75F5-9893-5253C399E002"
+              },
+              "infoBridgeSourceType": 220
+            }
+          },
+          "name": "Query 3 - retail_data_100k_Products",
+          "queryId": "Q5e18cbe0cefd49939b9ac0ad5b00f9d6",
+          "sourceId": "AC4420FA-579D-F111-A6AA-6045BD73E89F",
+          "transformationSteps": [
+            {
+              "meta": {
+                "description": "Inforiver data loaded",
+                "name": "Query from retail_data_100k_Products",
+                "type": 10,
+                "value": {}
+              },
+              "notes": null,
+              "queryId": "Q5e18cbe0cefd49939b9ac0ad5b00f9d6",
+              "stepIndex": 1
+            }
+          ],
+          "type": "EDITABLE",
+          "visualId": "01A02425-8E46-75F5-9893-5253C399E002",
+          "writebackDestinations": [],
+          "writebackSettings": null
+        }
+      ],
+      "sourceGuid": "AC4420FA-579D-F111-A6AA-6045BD73E89F",
+      "type": "EDITABLE",
+      "visualId": "01A02425-8E46-75F5-9893-5253C399E002"
     }
   ]
 }

@@ -1,7 +1,185 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/plan/definition/cube/1.0.0/schema.json",
-  "cubePartitionMeasureDataInputColumnMappings": [],
-  "cubePartitionMeasureMappings": [],
-  "cubePartitionMeasures": [],
-  "cubePartitions": []
+  "cubePartitionMeasureDataInputColumnMappings": [
+    {
+      "cubePartitionMeasure_RefId": "D079C085-579D-F111-A6AA-6045BD73E89F",
+      "cubePartition_RefId": "CE79C085-579D-F111-A6AA-6045BD73E89F",
+      "dataInputColumnMeasureGuid": "13796320413301095616",
+      "filterHash": null,
+      "recordGuid": "19875790-579D-F111-A6AA-6045BD73E89F",
+      "status": "ACTIVE",
+      "visual_RefId": "01a0242a-3066-7372-a1aa-5352b4230c5a"
+    }
+  ],
+  "cubePartitionMeasureMappings": [
+    {
+      "cubePartitionMeasure_RefId": "D079C085-579D-F111-A6AA-6045BD73E89F",
+      "cubePartition_RefId": "CE79C085-579D-F111-A6AA-6045BD73E89F",
+      "recordGuid": "D179C085-579D-F111-A6AA-6045BD73E89F",
+      "status": "ACTIVE"
+    },
+    {
+      "cubePartitionMeasure_RefId": "D079C085-579D-F111-A6AA-6045BD73E89F",
+      "cubePartition_RefId": "CF79C085-579D-F111-A6AA-6045BD73E89F",
+      "recordGuid": "D279C085-579D-F111-A6AA-6045BD73E89F",
+      "status": "ACTIVE"
+    }
+  ],
+  "cubePartitionMeasures": [
+    {
+      "config": {
+        "data_type": "Number",
+        "description": "",
+        "label": "Cube Measure",
+        "measure_type": {
+          "DataInput": {
+            "allow_input": "ReadAndEdit",
+            "bound_to_filter_context": true,
+            "column_type": {
+              "Number": {
+                "default_value": null,
+                "distribute_parent_value_to_children": true,
+                "max_value": null,
+                "min_value": null
+              }
+            },
+            "disable_write_access": false,
+            "on_change_formula": "",
+            "title": "Cube Measure"
+          }
+        }
+      },
+      "name": "Cube Measure",
+      "recordGuid": "D079C085-579D-F111-A6AA-6045BD73E89F",
+      "status": "ACTIVE",
+      "type": "NUMBER"
+    }
+  ],
+  "cubePartitions": [
+    {
+      "dimensions": [
+        {
+          "dataType": "String",
+          "distinctValueCount": 0,
+          "id": "[DimProduct[[H] Product Hierarchy]]~||~DimProduct[ClassName]",
+          "label": "ClassName",
+          "type": "Hierarchy Level"
+        },
+        {
+          "dataType": "String",
+          "distinctValueCount": 0,
+          "id": "[DimProduct[[H] Product Hierarchy]]~||~DimProduct[BrandName]",
+          "label": "BrandName",
+          "type": "Hierarchy Level"
+        }
+      ],
+      "measures": [
+        {
+          "aggregationType": "",
+          "dataType": "Decimal",
+          "id": "1-DAX_Measures[Total Budget]",
+          "isNative": true,
+          "label": "Total Budget",
+          "type": "Measure"
+        }
+      ],
+      "name": "Breakdown 1",
+      "recordGuid": "CE79C085-579D-F111-A6AA-6045BD73E89F",
+      "rowCount": 1188,
+      "status": "ACTIVE",
+      "timeDimensions": [
+        {
+          "dataType": "Int64",
+          "id": "LocalDateTable_cdf63dda-9846-477a-9745-f4049ae7b78c[Year]",
+          "label": "Year",
+          "type": "Hierarchy Level"
+        },
+        {
+          "dataType": "String",
+          "id": "LocalDateTable_cdf63dda-9846-477a-9745-f4049ae7b78c[Quarter]",
+          "label": "Quarter",
+          "type": "Hierarchy Level"
+        },
+        {
+          "dataType": "String",
+          "id": "LocalDateTable_cdf63dda-9846-477a-9745-f4049ae7b78c[Month]",
+          "label": "Month",
+          "type": "Hierarchy Level"
+        }
+      ]
+    },
+    {
+      "dimensions": [
+        {
+          "dataType": "String",
+          "distinctValueCount": 0,
+          "id": "[DimProduct[[H] Product Hierarchy]]~||~DimProduct[ClassName]",
+          "label": "ClassName",
+          "type": "Hierarchy Level"
+        },
+        {
+          "dataType": "String",
+          "distinctValueCount": 0,
+          "id": "[DimProduct[[H] Product Hierarchy]]~||~DimProduct[ProductCategoryName]",
+          "label": "ProductCategoryName",
+          "type": "Hierarchy Level"
+        },
+        {
+          "dataType": "String",
+          "distinctValueCount": 0,
+          "id": "[DimProduct[[H] Product Hierarchy]]~||~DimProduct[ProductSubcategoryName]",
+          "label": "ProductSubcategoryName",
+          "type": "Hierarchy Level"
+        },
+        {
+          "dataType": "String",
+          "distinctValueCount": 0,
+          "id": "[DimProduct[[H] Product Hierarchy]]~||~DimProduct[ProductName]",
+          "label": "ProductName",
+          "type": "Hierarchy Level"
+        },
+        {
+          "dataType": "String",
+          "distinctValueCount": 0,
+          "id": "DimProduct[ColorName]",
+          "label": "ColorName",
+          "type": "Column"
+        }
+      ],
+      "measures": [
+        {
+          "aggregationType": "",
+          "dataType": "Decimal",
+          "id": "1-DAX_Measures[Total Budget]",
+          "isNative": true,
+          "label": "Total Budget",
+          "type": "Measure"
+        }
+      ],
+      "name": "Breakdown 2",
+      "recordGuid": "CF79C085-579D-F111-A6AA-6045BD73E89F",
+      "rowCount": 90576,
+      "status": "ACTIVE",
+      "timeDimensions": [
+        {
+          "dataType": "Int64",
+          "id": "LocalDateTable_cdf63dda-9846-477a-9745-f4049ae7b78c[Year]",
+          "label": "Year",
+          "type": "Hierarchy Level"
+        },
+        {
+          "dataType": "String",
+          "id": "LocalDateTable_cdf63dda-9846-477a-9745-f4049ae7b78c[Quarter]",
+          "label": "Quarter",
+          "type": "Hierarchy Level"
+        },
+        {
+          "dataType": "String",
+          "id": "LocalDateTable_cdf63dda-9846-477a-9745-f4049ae7b78c[Month]",
+          "label": "Month",
+          "type": "Hierarchy Level"
+        }
+      ]
+    }
+  ]
 }

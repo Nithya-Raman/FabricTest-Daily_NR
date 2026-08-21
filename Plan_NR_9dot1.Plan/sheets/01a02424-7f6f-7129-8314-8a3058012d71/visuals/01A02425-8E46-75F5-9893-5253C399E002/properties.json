@@ -5,21 +5,27 @@
       "advanceLookup": [],
       "chartType": "COLUMN_VERTICAL",
       "dimension": {
-        "height": 0.4,
-        "width": 0.3
+        "height": 0.48998,
+        "width": 0.4861775
       },
+      "forms": "{\"visualFormUrls\":[],\"embeddedVisualFormDetails\":[]}",
       "groupMeasureAssignments": [],
       "groupName": "",
       "layerProperties": {
-        "order": 0
+        "layerProperties": {
+          "groupIds": [],
+          "isHidden": false,
+          "name": "retail_data_100k_Products"
+        },
+        "order": 3
       },
       "lockAspectRatio": false,
       "mobileProperties": {},
       "originEntityId": "4",
       "pivotAssignments": [],
       "position": {
-        "x": 0,
-        "y": 0
+        "x": 0.0049935375,
+        "y": 0.4999966666666667
       },
       "preVisualId": "5",
       "shapeType": "RECTANGLE",
@@ -1069,139 +1075,181 @@
         "assignmentColumnMap": {
           "5": {
             "BaseRetailPrice": {
-              "columnId": "",
-              "label": "",
-              "parentPath": [],
-              "source": "",
-              "sourceId": ""
+              "columnId": "MQ::cmV0YWlsX2RhdGFfMTAwa19Qcm9kdWN0cw::QmFzZVJldGFpbFByaWNl",
+              "label": "BaseRetailPrice",
+              "parentPath": [
+                "powertable-Fabric_SQL_DB-dbo-retail_data_100k_Products"
+              ],
+              "source": "visual",
+              "sourceId": "MQ::cmV0YWlsX2RhdGFfMTAwa19Qcm9kdWN0cw::QmFzZVJldGFpbFByaWNl"
             },
             "Brand": {
-              "columnId": "",
-              "label": "",
-              "parentPath": [],
-              "source": "",
-              "sourceId": ""
+              "columnId": "MQ::cmV0YWlsX2RhdGFfMTAwa19Qcm9kdWN0cw::QnJhbmQ",
+              "label": "Brand",
+              "parentPath": [
+                "powertable-Fabric_SQL_DB-dbo-retail_data_100k_Products"
+              ],
+              "source": "visual",
+              "sourceId": "MQ::cmV0YWlsX2RhdGFfMTAwa19Qcm9kdWN0cw::QnJhbmQ"
             },
             "Category": {
-              "columnId": "",
-              "label": "",
-              "parentPath": [],
-              "source": "",
-              "sourceId": ""
+              "columnId": "MQ::cmV0YWlsX2RhdGFfMTAwa19Qcm9kdWN0cw::Q2F0ZWdvcnk",
+              "label": "Category",
+              "parentPath": [
+                "powertable-Fabric_SQL_DB-dbo-retail_data_100k_Products"
+              ],
+              "source": "visual",
+              "sourceId": "MQ::cmV0YWlsX2RhdGFfMTAwa19Qcm9kdWN0cw::Q2F0ZWdvcnk"
             },
             "Department": {
-              "columnId": "",
-              "label": "",
-              "parentPath": [],
-              "source": "",
-              "sourceId": ""
+              "columnId": "MQ::cmV0YWlsX2RhdGFfMTAwa19Qcm9kdWN0cw::RGVwYXJ0bWVudA",
+              "label": "Department",
+              "parentPath": [
+                "powertable-Fabric_SQL_DB-dbo-retail_data_100k_Products"
+              ],
+              "source": "visual",
+              "sourceId": "MQ::cmV0YWlsX2RhdGFfMTAwa19Qcm9kdWN0cw::RGVwYXJ0bWVudA"
             },
             "Description": {
-              "columnId": "",
-              "label": "",
-              "parentPath": [],
-              "source": "",
-              "sourceId": ""
+              "columnId": "MQ::cmV0YWlsX2RhdGFfMTAwa19Qcm9kdWN0cw::RGVzY3JpcHRpb24",
+              "label": "Description",
+              "parentPath": [
+                "powertable-Fabric_SQL_DB-dbo-retail_data_100k_Products"
+              ],
+              "source": "visual",
+              "sourceId": "MQ::cmV0YWlsX2RhdGFfMTAwa19Qcm9kdWN0cw::RGVzY3JpcHRpb24"
             },
             "Height": {
-              "columnId": "",
-              "label": "",
-              "parentPath": [],
-              "source": "",
-              "sourceId": ""
+              "columnId": "MQ::cmV0YWlsX2RhdGFfMTAwa19Qcm9kdWN0cw::SGVpZ2h0",
+              "label": "Height",
+              "parentPath": [
+                "powertable-Fabric_SQL_DB-dbo-retail_data_100k_Products"
+              ],
+              "source": "visual",
+              "sourceId": "MQ::cmV0YWlsX2RhdGFfMTAwa19Qcm9kdWN0cw::SGVpZ2h0"
             },
             "IsCurrentFlag": {
-              "columnId": "",
-              "label": "",
-              "parentPath": [],
-              "source": "",
-              "sourceId": ""
+              "columnId": "MQ::cmV0YWlsX2RhdGFfMTAwa19Qcm9kdWN0cw::SXNDdXJyZW50RmxhZw",
+              "label": "IsCurrentFlag",
+              "parentPath": [
+                "powertable-Fabric_SQL_DB-dbo-retail_data_100k_Products"
+              ],
+              "source": "visual",
+              "sourceId": "MQ::cmV0YWlsX2RhdGFfMTAwa19Qcm9kdWN0cw::SXNDdXJyZW50RmxhZw"
             },
             "Length": {
-              "columnId": "",
-              "label": "",
-              "parentPath": [],
-              "source": "",
-              "sourceId": ""
+              "columnId": "MQ::cmV0YWlsX2RhdGFfMTAwa19Qcm9kdWN0cw::TGVuZ3Ro",
+              "label": "Length",
+              "parentPath": [
+                "powertable-Fabric_SQL_DB-dbo-retail_data_100k_Products"
+              ],
+              "source": "visual",
+              "sourceId": "MQ::cmV0YWlsX2RhdGFfMTAwa19Qcm9kdWN0cw::TGVuZ3Ro"
             },
             "Manufacturer": {
-              "columnId": "",
-              "label": "",
-              "parentPath": [],
-              "source": "",
-              "sourceId": ""
+              "columnId": "MQ::cmV0YWlsX2RhdGFfMTAwa19Qcm9kdWN0cw::TWFudWZhY3R1cmVy",
+              "label": "Manufacturer",
+              "parentPath": [
+                "powertable-Fabric_SQL_DB-dbo-retail_data_100k_Products"
+              ],
+              "source": "visual",
+              "sourceId": "MQ::cmV0YWlsX2RhdGFfMTAwa19Qcm9kdWN0cw::TWFudWZhY3R1cmVy"
             },
             "ProductID": {
-              "columnId": "",
-              "label": "",
-              "parentPath": [],
-              "source": "",
-              "sourceId": ""
+              "columnId": "MQ::cmV0YWlsX2RhdGFfMTAwa19Qcm9kdWN0cw::UHJvZHVjdElE",
+              "label": "ProductID",
+              "parentPath": [
+                "powertable-Fabric_SQL_DB-dbo-retail_data_100k_Products"
+              ],
+              "source": "visual",
+              "sourceId": "MQ::cmV0YWlsX2RhdGFfMTAwa19Qcm9kdWN0cw::UHJvZHVjdElE"
             },
             "ProductName": {
-              "columnId": "",
-              "label": "",
-              "parentPath": [],
-              "source": "",
-              "sourceId": ""
+              "columnId": "MQ::cmV0YWlsX2RhdGFfMTAwa19Qcm9kdWN0cw::UHJvZHVjdE5hbWU",
+              "label": "ProductName",
+              "parentPath": [
+                "powertable-Fabric_SQL_DB-dbo-retail_data_100k_Products"
+              ],
+              "source": "visual",
+              "sourceId": "MQ::cmV0YWlsX2RhdGFfMTAwa19Qcm9kdWN0cw::UHJvZHVjdE5hbWU"
             },
             "SKU": {
-              "columnId": "",
-              "label": "",
-              "parentPath": [],
-              "source": "",
-              "sourceId": ""
+              "columnId": "MQ::cmV0YWlsX2RhdGFfMTAwa19Qcm9kdWN0cw::U0tV",
+              "label": "SKU",
+              "parentPath": [
+                "powertable-Fabric_SQL_DB-dbo-retail_data_100k_Products"
+              ],
+              "source": "visual",
+              "sourceId": "MQ::cmV0YWlsX2RhdGFfMTAwa19Qcm9kdWN0cw::U0tV"
             },
             "SubCategory": {
-              "columnId": "",
-              "label": "",
-              "parentPath": [],
-              "source": "",
-              "sourceId": ""
+              "columnId": "MQ::cmV0YWlsX2RhdGFfMTAwa19Qcm9kdWN0cw::U3ViQ2F0ZWdvcnk",
+              "label": "SubCategory",
+              "parentPath": [
+                "powertable-Fabric_SQL_DB-dbo-retail_data_100k_Products"
+              ],
+              "source": "visual",
+              "sourceId": "MQ::cmV0YWlsX2RhdGFfMTAwa19Qcm9kdWN0cw::U3ViQ2F0ZWdvcnk"
             },
             "UPC": {
-              "columnId": "",
-              "label": "",
-              "parentPath": [],
-              "source": "",
-              "sourceId": ""
+              "columnId": "MQ::cmV0YWlsX2RhdGFfMTAwa19Qcm9kdWN0cw::VVBD",
+              "label": "UPC",
+              "parentPath": [
+                "powertable-Fabric_SQL_DB-dbo-retail_data_100k_Products"
+              ],
+              "source": "visual",
+              "sourceId": "MQ::cmV0YWlsX2RhdGFfMTAwa19Qcm9kdWN0cw::VVBD"
             },
             "UnitCost": {
-              "columnId": "",
-              "label": "",
-              "parentPath": [],
-              "source": "",
-              "sourceId": ""
+              "columnId": "MQ::cmV0YWlsX2RhdGFfMTAwa19Qcm9kdWN0cw::VW5pdENvc3Q",
+              "label": "UnitCost",
+              "parentPath": [
+                "powertable-Fabric_SQL_DB-dbo-retail_data_100k_Products"
+              ],
+              "source": "visual",
+              "sourceId": "MQ::cmV0YWlsX2RhdGFfMTAwa19Qcm9kdWN0cw::VW5pdENvc3Q"
             },
             "ValidFromDate": {
-              "columnId": "",
-              "label": "",
-              "parentPath": [],
-              "source": "",
-              "sourceId": ""
+              "columnId": "MQ::cmV0YWlsX2RhdGFfMTAwa19Qcm9kdWN0cw::VmFsaWRGcm9tRGF0ZQ",
+              "label": "ValidFromDate",
+              "parentPath": [
+                "powertable-Fabric_SQL_DB-dbo-retail_data_100k_Products"
+              ],
+              "source": "visual",
+              "sourceId": "retail_data_100k_Products[ValidFromDate_Day]"
             },
             "ValidToDate": {
-              "columnId": "",
-              "label": "",
-              "parentPath": [],
-              "source": "",
-              "sourceId": ""
+              "columnId": "MQ::cmV0YWlsX2RhdGFfMTAwa19Qcm9kdWN0cw::VmFsaWRUb0RhdGU",
+              "label": "ValidToDate",
+              "parentPath": [
+                "powertable-Fabric_SQL_DB-dbo-retail_data_100k_Products"
+              ],
+              "source": "visual",
+              "sourceId": "MQ::cmV0YWlsX2RhdGFfMTAwa19Qcm9kdWN0cw::VmFsaWRUb0RhdGU"
             },
             "Weight": {
-              "columnId": "",
-              "label": "",
-              "parentPath": [],
-              "source": "",
-              "sourceId": ""
+              "columnId": "MQ::cmV0YWlsX2RhdGFfMTAwa19Qcm9kdWN0cw::V2VpZ2h0",
+              "label": "Weight",
+              "parentPath": [
+                "powertable-Fabric_SQL_DB-dbo-retail_data_100k_Products"
+              ],
+              "source": "visual",
+              "sourceId": "MQ::cmV0YWlsX2RhdGFfMTAwa19Qcm9kdWN0cw::V2VpZ2h0"
             },
             "Width": {
-              "columnId": "",
-              "label": "",
-              "parentPath": [],
-              "source": "",
-              "sourceId": ""
+              "columnId": "MQ::cmV0YWlsX2RhdGFfMTAwa19Qcm9kdWN0cw::V2lkdGg",
+              "label": "Width",
+              "parentPath": [
+                "powertable-Fabric_SQL_DB-dbo-retail_data_100k_Products"
+              ],
+              "source": "visual",
+              "sourceId": "MQ::cmV0YWlsX2RhdGFfMTAwa19Qcm9kdWN0cw::V2lkdGg"
             }
           }
+        },
+        "chartStyles": {
+          "showDataLabel": true,
+          "variancePin": "square"
         },
         "columnMeta": {
           "BaseRetailPrice": {
@@ -1271,6 +1319,90 @@
             "workspaceName": ""
           },
           "superFilterAssignments": []
+        },
+        "filterContextProperties": {
+          "filterContextDimensions": [],
+          "filterContextHash": null,
+          "filterContextHashMap": {},
+          "filterContextJson": {}
+        },
+        "globalStyles": {
+          "chartScale": "individual",
+          "columnHierarchyFontStyle": "normal",
+          "columnHierarchyFontWeight": "normal",
+          "columnStyle": null,
+          "fontFamily": "Segoe-UI, Tahoma, Geneva, Verdana, sans-serif",
+          "fontSize": "12",
+          "fontStyle": "normal",
+          "fontWeight": "normal",
+          "headerFontColor": "#212121",
+          "headerFontSize": "12px",
+          "headerFormat": true,
+          "headerHeight": 32,
+          "headerLabelOrient": "initial",
+          "hierarchyFontStyle": "normal",
+          "hierarchyfontWeight": "bold",
+          "isFontFamilyChanged": false,
+          "isHeaderIconVisible": true,
+          "isHeightUpdatedManually": false,
+          "rotateLabels": {
+            "angle": 0,
+            "enabled": false
+          },
+          "rowHeight": 26,
+          "showRowLabelEditor": false,
+          "subTotalFontWeight": "semiBold",
+          "textColor": "#212121",
+          "varianceBarFont": 12
+        },
+        "gridStyles": {
+          "autoWrapHeaderText": false,
+          "bottomSpace": 0,
+          "categoryGridLines": true,
+          "categoryLabelColor": "#dddddd",
+          "cellUpdateBackgroundColor": "#E1F5FF",
+          "chartSpacing": true,
+          "columnSpacing": "off",
+          "columnSpacingValue": 5,
+          "compactSplitLine": true,
+          "compactSplitLineColor": "#E0E0E0",
+          "defaultColors": [],
+          "direction": "ltr",
+          "enableCategoryLabelColor": false,
+          "fabricAccentColor": "#117865",
+          "gridBackground": "#FFFFFF",
+          "headerBackground": "#FAFAFA",
+          "headerGridColor": "#E6E6E6",
+          "headerGridLines": true,
+          "headerSelectionBackgroundColor": "#E6E6E6",
+          "horizontalMinorGridColor": "#E6E6E6",
+          "horizontalMinorGridLines": "solid",
+          "iconColor": "#242424",
+          "indentSpacing": 10,
+          "isLevelIndent": false,
+          "leftSpace": 0,
+          "lineStyleColor": "#666666",
+          "lineStyleFormat": "solid",
+          "loaderColor": "#f5f5f5",
+          "majorGridColor": "#b0b0b0",
+          "majorGridLines": "off",
+          "placeholderGridBackground": "#FFFFFF",
+          "primaryColors": [
+            "#117865"
+          ],
+          "restrictedCellBackgroundColor": "#F0F0F0",
+          "rightSpace": 0,
+          "rowDeleteBackgroundColor": "#FFEAEB",
+          "rowDraggerLeftOffset": 0,
+          "rowInsertBackgroundColor": "#EDFFEE",
+          "selectionBackgroundColor": "rgba(95, 95, 95, 0.08)",
+          "selectionBorderColor": "#117865",
+          "showExpandCollapse": true,
+          "showVAHighlight": true,
+          "titleAndChartSpace": 4,
+          "topSpace": 0,
+          "verticalMinorGridColor": "#E6E6E6",
+          "verticalMinorGridLines": "solid"
         },
         "locale": "en-US",
         "manageMeasures": [
@@ -1436,6 +1568,7 @@
           "parentApprovalMeta": {},
           "tableModeColVisibility": {}
         },
+        "show": true,
         "superFilter": {
           "BaseRetailPrice": {
             "appData": [],
@@ -4194,7 +4327,89 @@
             ],
             "position": "RIGHT"
           }
-        ]
+        ],
+        "themeColors": {
+          "chartTheme": "trafficlights",
+          "chartThemeTable": false,
+          "enableRowHover": "rowHover",
+          "enableVarianceColor": false,
+          "invertVarianceColor": false,
+          "lineStyleRecentColor": "",
+          "measureOnlyHighlight": false,
+          "negativeColor": "#A60000",
+          "positiveColor": "#377D22",
+          "previousThemeType": "trafficlights",
+          "rowEvenColor": "#f5f5f5",
+          "rowHoverColor": "#f5f5f5",
+          "rowHoverTextColor": "#212121",
+          "rowOddColor": "#ffffff",
+          "showTable": false,
+          "tableThemeType": false,
+          "themeType": "trafficlights",
+          "valueColor": "",
+          "varianceNegativeColor": "#A60000",
+          "variancePositiveColor": "#377D22"
+        },
+        "visualStyles": {
+          "background": {
+            "backgroundColor": "#fff",
+            "isEnabled": true
+          },
+          "border": {
+            "color": "#ddd",
+            "isEnabled": false,
+            "side": "all",
+            "width": 0
+          },
+          "cornerRadius": {
+            "isCustomCornerRadius": false,
+            "isEnabled": true,
+            "radiusBottomLeft": 0,
+            "radiusBottomRight": 0,
+            "radiusTopLeft": 0,
+            "radiusTopRight": 0
+          },
+          "isTooltipEnabled": true,
+          "padding": {
+            "bottomPadding": 5,
+            "isCustomPaddingSize": false,
+            "isEnabled": true,
+            "leftPadding": 5,
+            "rightPadding": 5,
+            "topPadding": 5
+          },
+          "rotation": {
+            "isEnabled": false,
+            "transform": 0
+          },
+          "shadow": {
+            "angle": 0,
+            "blur": 0,
+            "color": "#000000",
+            "distance": 10,
+            "isEnabled": false,
+            "opacity": 100,
+            "placement": "outer",
+            "side": "center",
+            "width": 0
+          },
+          "showHelperTooltips": true,
+          "showSelectedSeriesInTooltip": false,
+          "tooltipPageId": "auto",
+          "tooltipStyle": {
+            "backgroundColor": "#FFFFFF",
+            "bold": false,
+            "fontFamily": "Segoe UI",
+            "fontSize": 12,
+            "italic": false,
+            "labelColor": "#252423",
+            "underline": false,
+            "valueColor": "#252423"
+          },
+          "tooltipType": "default",
+          "varianceInTooltip": true,
+          "varianceTooltipType": "both"
+        }
       },
       "visualStyles": {
         "background": {
