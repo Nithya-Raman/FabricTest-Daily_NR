@@ -6437,7 +6437,10 @@
         "isHidden": false,
         "name": "Planning"
       },
-      "layout": "",
+      "layout": {
+        "layout_type": "Table",
+        "measure_layout": null
+      },
       "layoutType": "",
       "locale": "en-US",
       "manage_measures": [
@@ -6555,7 +6558,7 @@
       "page_config": {
         "column_break": null,
         "pagination_type": {
-          "ContainerHeight": 414
+          "ContainerHeight": 0
         },
         "view": "Browser"
       },
@@ -6947,7 +6950,18 @@
       "rowExpandCollapseOptions": "",
       "row_expand_state_config": "",
       "row_group_config": "",
-      "ruler": "",
+      "ruler": {
+        "activeSummaryGroup": null,
+        "disabled": {
+          "prevEnabledState": null,
+          "state": false
+        },
+        "enabled": true,
+        "rulerMeta": {
+          "showNumbers": false,
+          "width": 20
+        }
+      },
       "rulerMeta": "",
       "search": "",
       "showHeaderFooter": true,
@@ -7659,7 +7673,11 @@
           "position": "RIGHT"
         }
       ],
-      "tableState": "",
+      "tableState": {
+        "columnExpandCollapseIcon": "arrows",
+        "columnHierarchyLevel": {},
+        "expandCollapseIcon": "none"
+      },
       "themeColors": {
         "chartTheme": "trafficlights",
         "enableRowHover": "rowAlternate",
@@ -7697,9 +7715,9 @@
       "totals_config": {
         "column_grand_total": "Left",
         "column_sub_total": null,
-        "freeze_total": false,
+        "freeze_total": true,
         "row_grand_total": "Top",
-        "row_sub_total": "Top"
+        "row_sub_total": null
       },
       "transformMeasure": "none",
       "version": "",

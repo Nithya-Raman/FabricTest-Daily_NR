@@ -78,6 +78,7 @@
       }
     },
     "commentary": {
+      "activeBookmarkId": null,
       "annotation": {
         "settings": {
           "annotationText": {},
@@ -114,7 +115,7 @@
         }
       },
       "notes": {
-        "counter": 1,
+        "counter": 0,
         "enableMarkerMode": false,
         "markerData": [],
         "settings": {
@@ -161,7 +162,6 @@
     "excludedFilterContextAssignments": {},
     "filterContextUserConfig": {},
     "filterPanePosition": "RIGHT",
-    "pageLevelFilterAssignments": [],
     "sourceVisualsMeta": {},
     "topPositionFilterExpandConfig": {
       "expandedHeight": 250,

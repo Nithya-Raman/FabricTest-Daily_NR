@@ -13,7 +13,6 @@
             "isTimeInterval": true,
             "level": 0,
             "name": "Year",
-            "periodKey": null,
             "timeIntervalUnit": "YEAR"
           },
           {
@@ -22,7 +21,6 @@
             "isTimeInterval": true,
             "level": 1,
             "name": "Quarter",
-            "periodKey": null,
             "timeIntervalUnit": "QUARTER"
           },
           {
@@ -31,7 +29,6 @@
             "isTimeInterval": true,
             "level": 2,
             "name": "Month",
-            "periodKey": null,
             "timeIntervalUnit": "MONTH"
           }
         ],
@@ -44,7 +41,117 @@
             "name": "DateKey"
           }
         ],
-        "dateOptions": [],
+        "dateOptions": [
+          {
+            "alias": "Year Key",
+            "display_name": "Year",
+            "fieldType": "YEAR",
+            "formulaQuery": "CAST(YEAR(x) AS INT)",
+            "isTimeInterval": true,
+            "name": "Year",
+            "periodKey": "YEAR",
+            "timeIntervalUnit": "YEAR"
+          },
+          {
+            "alias": "Quarter Key",
+            "fieldType": "QUARTER",
+            "formulaQuery": "CAST(QUARTER(x) AS INT)",
+            "isTimeInterval": true,
+            "name": "Quarter",
+            "periodKey": "QUARTER",
+            "timeIntervalUnit": "QUARTER"
+          },
+          {
+            "alias": "Quarter Name",
+            "fieldType": "QUARTER",
+            "formulaQuery": "('Q' || QUARTER(x))",
+            "isTimeInterval": true,
+            "name": "Quarter Name",
+            "periodKey": "QUARTER_NAME",
+            "timeIntervalUnit": "QUARTER"
+          },
+          {
+            "alias": "Month Key",
+            "fieldType": "MONTH",
+            "formulaQuery": "CAST(MONTH(x) AS INT)",
+            "isTimeInterval": true,
+            "name": "Month",
+            "periodKey": "MONTH",
+            "timeIntervalUnit": "MONTH"
+          },
+          {
+            "alias": "Name Of Month",
+            "fieldType": "MONTH",
+            "formulaQuery": "MONTHNAME(x)",
+            "isTimeInterval": true,
+            "name": "Name Of Month",
+            "periodKey": "NAME_OF_MONTH",
+            "timeIntervalUnit": "MONTH"
+          },
+          {
+            "alias": "Month Name",
+            "fieldType": "MONTH",
+            "formulaQuery": "LEFT(MONTHNAME(x), 3)",
+            "isTimeInterval": true,
+            "name": "Month Name",
+            "periodKey": "MONTH_NAME",
+            "timeIntervalUnit": "MONTH"
+          },
+          {
+            "alias": "Week of Year",
+            "fieldType": "WEEK",
+            "formulaQuery": "CAST(WEEKOFYEAR(x) AS INT)",
+            "isTimeInterval": true,
+            "name": "Week of Year",
+            "periodKey": "WEEK_OF_YEAR",
+            "timeIntervalUnit": "WEEK_OF_YEAR"
+          },
+          {
+            "alias": "Week of Month",
+            "fieldType": "WEEK",
+            "formulaQuery": "CASE\n    WHEN DATEPART('day', x) <= 7 THEN 1\n    WHEN DATEPART('day', x) <= 14 THEN 2\n    WHEN DATEPART('day', x) <= 21 THEN 3\n    WHEN DATEPART('day', x) <= 28 THEN 4\n    ELSE 5\n  END",
+            "isTimeInterval": true,
+            "name": "Week of Month",
+            "periodKey": "WEEK_OF_MONTH",
+            "timeIntervalUnit": "WEEK_OF_MONTH"
+          },
+          {
+            "alias": "Day Key",
+            "fieldType": "DAY",
+            "formulaQuery": "DAYNAME(x)",
+            "isTimeInterval": true,
+            "name": "Day",
+            "periodKey": "DAY",
+            "timeIntervalUnit": "DAY"
+          },
+          {
+            "alias": "Day Key",
+            "fieldType": "DAY",
+            "formulaQuery": "LAST_DAY(x)",
+            "isTimeInterval": true,
+            "name": "Last Day",
+            "periodKey": "DAY",
+            "timeIntervalUnit": "LAST_DAY"
+          },
+          {
+            "alias": "Day of Month",
+            "fieldType": "DAY",
+            "formulaQuery": "CAST(DAYOFMONTH(x) AS INT)",
+            "isTimeInterval": true,
+            "name": "Day of Month",
+            "periodKey": "DAY_OF_MONTH",
+            "timeIntervalUnit": "DAY_OF_MONTH"
+          },
+          {
+            "alias": "Day of Year",
+            "fieldType": "DAY",
+            "formulaQuery": "CAST(DAYOFYEAR(x) AS INT)",
+            "isTimeInterval": true,
+            "name": "Day of Year",
+            "periodKey": "DAY_OF_YEAR",
+            "timeIntervalUnit": "DAY_OF_YEAR"
+          }
+        ],
         "dimensions": [
           {
             "alias": "ClassName",
@@ -52,7 +159,6 @@
             "isTimeInterval": false,
             "level": 0,
             "name": "ClassName",
-            "periodKey": null,
             "timeIntervalUnit": null
           },
           {
@@ -61,7 +167,6 @@
             "isTimeInterval": false,
             "level": 1,
             "name": "BrandName",
-            "periodKey": null,
             "timeIntervalUnit": null
           },
           {
@@ -70,7 +175,6 @@
             "isTimeInterval": false,
             "level": 2,
             "name": "ProductCategoryName",
-            "periodKey": null,
             "timeIntervalUnit": null
           },
           {
@@ -79,7 +183,6 @@
             "isTimeInterval": false,
             "level": 3,
             "name": "ProductSubcategoryName",
-            "periodKey": null,
             "timeIntervalUnit": null
           }
         ],
@@ -123,7 +226,7 @@
           {
             "aggregationType": "sum",
             "alias": "Total Budget",
-            "columnType": "NATIVE",
+            "columnType": "DI",
             "dataType": "NUMERIC",
             "id": "2759107058914755561",
             "isHierarchyColumn": false,
@@ -145,7 +248,7 @@
           {
             "aggregationType": "sum",
             "alias": "FM",
-            "columnType": "FORMULA",
+            "columnType": "DI",
             "dataType": "NUMERIC",
             "id": "13191622219862083007",
             "isHierarchyColumn": false,
@@ -156,7 +259,7 @@
           {
             "aggregationType": "sum",
             "alias": "Forecast",
-            "columnType": "FORECAST",
+            "columnType": "DI",
             "dataType": "NUMERIC",
             "id": "14818333406597834857",
             "isHierarchyColumn": false,
@@ -175,7 +278,6 @@
             "isTimeInterval": true,
             "level": 0,
             "name": "Year",
-            "periodKey": null,
             "timeIntervalUnit": "YEAR"
           },
           {
@@ -185,7 +287,6 @@
             "isTimeInterval": true,
             "level": 1,
             "name": "Quarter",
-            "periodKey": null,
             "timeIntervalUnit": "QUARTER"
           },
           {
@@ -195,7 +296,6 @@
             "isTimeInterval": true,
             "level": 2,
             "name": "Month",
-            "periodKey": null,
             "timeIntervalUnit": "MONTH"
           }
         ],
@@ -215,7 +315,6 @@
             "isTimeInterval": false,
             "level": 0,
             "name": "ClassName",
-            "periodKey": null,
             "timeIntervalUnit": null
           },
           {
@@ -225,7 +324,6 @@
             "isTimeInterval": false,
             "level": 1,
             "name": "BrandName",
-            "periodKey": null,
             "timeIntervalUnit": null
           },
           {
@@ -235,7 +333,6 @@
             "isTimeInterval": false,
             "level": 2,
             "name": "ProductCategoryName",
-            "periodKey": null,
             "timeIntervalUnit": null
           },
           {
@@ -245,7 +342,6 @@
             "isTimeInterval": false,
             "level": 3,
             "name": "ProductSubcategoryName",
-            "periodKey": null,
             "timeIntervalUnit": null
           }
         ],
@@ -261,7 +357,7 @@
           {
             "aggregationType": "sum",
             "alias": "Total Budget",
-            "columnType": "NATIVE",
+            "columnType": "DI",
             "dataType": "NUMERIC",
             "id": "2759107058914755561",
             "isHierarchyColumn": false,
@@ -283,7 +379,7 @@
           {
             "aggregationType": "sum",
             "alias": "FM",
-            "columnType": "FORMULA",
+            "columnType": "DI",
             "dataType": "NUMERIC",
             "id": "13191622219862083007",
             "isHierarchyColumn": false,
@@ -294,7 +390,7 @@
           {
             "aggregationType": "sum",
             "alias": "Forecast",
-            "columnType": "FORECAST",
+            "columnType": "DI",
             "dataType": "NUMERIC",
             "id": "14818333406597834857",
             "isHierarchyColumn": false,
@@ -303,6 +399,7 @@
             "type": "DOUBLE"
           }
         ],
+        "sourceErrorMessage": "[]",
         "timeIntervalMapping": [],
         "workspaceId": "40e665a1-1bc5-44f9-a2a2-a98e0ba1f12c",
         "workspaceName": "alm-standalone-workspace"
@@ -319,7 +416,6 @@
                 "isTimeInterval": true,
                 "level": 0,
                 "name": "Year",
-                "periodKey": null,
                 "timeIntervalUnit": "YEAR"
               },
               {
@@ -328,7 +424,6 @@
                 "isTimeInterval": true,
                 "level": 1,
                 "name": "Quarter",
-                "periodKey": null,
                 "timeIntervalUnit": "QUARTER"
               },
               {
@@ -337,7 +432,6 @@
                 "isTimeInterval": true,
                 "level": 2,
                 "name": "Month",
-                "periodKey": null,
                 "timeIntervalUnit": "MONTH"
               }
             ],
@@ -350,7 +444,117 @@
                 "name": "DateKey"
               }
             ],
-            "dateOptions": [],
+            "dateOptions": [
+              {
+                "alias": "Year Key",
+                "display_name": "Year",
+                "fieldType": "YEAR",
+                "formulaQuery": "CAST(YEAR(x) AS INT)",
+                "isTimeInterval": true,
+                "name": "Year",
+                "periodKey": "YEAR",
+                "timeIntervalUnit": "YEAR"
+              },
+              {
+                "alias": "Quarter Key",
+                "fieldType": "QUARTER",
+                "formulaQuery": "CAST(QUARTER(x) AS INT)",
+                "isTimeInterval": true,
+                "name": "Quarter",
+                "periodKey": "QUARTER",
+                "timeIntervalUnit": "QUARTER"
+              },
+              {
+                "alias": "Quarter Name",
+                "fieldType": "QUARTER",
+                "formulaQuery": "('Q' || QUARTER(x))",
+                "isTimeInterval": true,
+                "name": "Quarter Name",
+                "periodKey": "QUARTER_NAME",
+                "timeIntervalUnit": "QUARTER"
+              },
+              {
+                "alias": "Month Key",
+                "fieldType": "MONTH",
+                "formulaQuery": "CAST(MONTH(x) AS INT)",
+                "isTimeInterval": true,
+                "name": "Month",
+                "periodKey": "MONTH",
+                "timeIntervalUnit": "MONTH"
+              },
+              {
+                "alias": "Name Of Month",
+                "fieldType": "MONTH",
+                "formulaQuery": "MONTHNAME(x)",
+                "isTimeInterval": true,
+                "name": "Name Of Month",
+                "periodKey": "NAME_OF_MONTH",
+                "timeIntervalUnit": "MONTH"
+              },
+              {
+                "alias": "Month Name",
+                "fieldType": "MONTH",
+                "formulaQuery": "LEFT(MONTHNAME(x), 3)",
+                "isTimeInterval": true,
+                "name": "Month Name",
+                "periodKey": "MONTH_NAME",
+                "timeIntervalUnit": "MONTH"
+              },
+              {
+                "alias": "Week of Year",
+                "fieldType": "WEEK",
+                "formulaQuery": "CAST(WEEKOFYEAR(x) AS INT)",
+                "isTimeInterval": true,
+                "name": "Week of Year",
+                "periodKey": "WEEK_OF_YEAR",
+                "timeIntervalUnit": "WEEK_OF_YEAR"
+              },
+              {
+                "alias": "Week of Month",
+                "fieldType": "WEEK",
+                "formulaQuery": "CASE\n    WHEN DATEPART('day', x) <= 7 THEN 1\n    WHEN DATEPART('day', x) <= 14 THEN 2\n    WHEN DATEPART('day', x) <= 21 THEN 3\n    WHEN DATEPART('day', x) <= 28 THEN 4\n    ELSE 5\n  END",
+                "isTimeInterval": true,
+                "name": "Week of Month",
+                "periodKey": "WEEK_OF_MONTH",
+                "timeIntervalUnit": "WEEK_OF_MONTH"
+              },
+              {
+                "alias": "Day Key",
+                "fieldType": "DAY",
+                "formulaQuery": "DAYNAME(x)",
+                "isTimeInterval": true,
+                "name": "Day",
+                "periodKey": "DAY",
+                "timeIntervalUnit": "DAY"
+              },
+              {
+                "alias": "Day Key",
+                "fieldType": "DAY",
+                "formulaQuery": "LAST_DAY(x)",
+                "isTimeInterval": true,
+                "name": "Last Day",
+                "periodKey": "DAY",
+                "timeIntervalUnit": "LAST_DAY"
+              },
+              {
+                "alias": "Day of Month",
+                "fieldType": "DAY",
+                "formulaQuery": "CAST(DAYOFMONTH(x) AS INT)",
+                "isTimeInterval": true,
+                "name": "Day of Month",
+                "periodKey": "DAY_OF_MONTH",
+                "timeIntervalUnit": "DAY_OF_MONTH"
+              },
+              {
+                "alias": "Day of Year",
+                "fieldType": "DAY",
+                "formulaQuery": "CAST(DAYOFYEAR(x) AS INT)",
+                "isTimeInterval": true,
+                "name": "Day of Year",
+                "periodKey": "DAY_OF_YEAR",
+                "timeIntervalUnit": "DAY_OF_YEAR"
+              }
+            ],
             "dimensions": [
               {
                 "alias": "ClassName",
@@ -358,7 +562,6 @@
                 "isTimeInterval": false,
                 "level": 0,
                 "name": "ClassName",
-                "periodKey": null,
                 "timeIntervalUnit": null
               },
               {
@@ -367,7 +570,6 @@
                 "isTimeInterval": false,
                 "level": 1,
                 "name": "BrandName",
-                "periodKey": null,
                 "timeIntervalUnit": null
               },
               {
@@ -376,7 +578,6 @@
                 "isTimeInterval": false,
                 "level": 2,
                 "name": "ProductCategoryName",
-                "periodKey": null,
                 "timeIntervalUnit": null
               },
               {
@@ -385,7 +586,6 @@
                 "isTimeInterval": false,
                 "level": 3,
                 "name": "ProductSubcategoryName",
-                "periodKey": null,
                 "timeIntervalUnit": null
               }
             ],
@@ -430,7 +630,7 @@
               {
                 "aggregationType": "sum",
                 "alias": "Total Budget",
-                "columnType": "NATIVE",
+                "columnType": "DI",
                 "dataType": "NUMERIC",
                 "id": "2759107058914755561",
                 "isHierarchyColumn": false,
@@ -452,7 +652,7 @@
               {
                 "aggregationType": "sum",
                 "alias": "FM",
-                "columnType": "FORMULA",
+                "columnType": "DI",
                 "dataType": "NUMERIC",
                 "id": "13191622219862083007",
                 "isHierarchyColumn": false,
@@ -463,7 +663,7 @@
               {
                 "aggregationType": "sum",
                 "alias": "Forecast",
-                "columnType": "FORECAST",
+                "columnType": "DI",
                 "dataType": "NUMERIC",
                 "id": "14818333406597834857",
                 "isHierarchyColumn": false,
@@ -482,7 +682,6 @@
                 "isTimeInterval": true,
                 "level": 0,
                 "name": "Year",
-                "periodKey": null,
                 "timeIntervalUnit": "YEAR",
                 "type": "VARCHAR"
               },
@@ -493,7 +692,6 @@
                 "isTimeInterval": true,
                 "level": 1,
                 "name": "Quarter",
-                "periodKey": null,
                 "timeIntervalUnit": "QUARTER",
                 "type": "VARCHAR"
               },
@@ -504,7 +702,6 @@
                 "isTimeInterval": true,
                 "level": 2,
                 "name": "Month",
-                "periodKey": null,
                 "timeIntervalUnit": "MONTH",
                 "type": "VARCHAR"
               }
@@ -526,7 +723,6 @@
                 "isTimeInterval": false,
                 "level": 0,
                 "name": "ClassName",
-                "periodKey": null,
                 "timeIntervalUnit": null,
                 "type": "VARCHAR"
               },
@@ -537,7 +733,6 @@
                 "isTimeInterval": false,
                 "level": 1,
                 "name": "BrandName",
-                "periodKey": null,
                 "timeIntervalUnit": null,
                 "type": "VARCHAR"
               },
@@ -548,7 +743,6 @@
                 "isTimeInterval": false,
                 "level": 2,
                 "name": "ProductCategoryName",
-                "periodKey": null,
                 "timeIntervalUnit": null,
                 "type": "VARCHAR"
               },
@@ -559,7 +753,6 @@
                 "isTimeInterval": false,
                 "level": 3,
                 "name": "ProductSubcategoryName",
-                "periodKey": null,
                 "timeIntervalUnit": null,
                 "type": "VARCHAR"
               }
@@ -576,7 +769,7 @@
               {
                 "aggregationType": "sum",
                 "alias": "Total Budget",
-                "columnType": "NATIVE",
+                "columnType": "DI",
                 "dataType": "NUMERIC",
                 "id": "2759107058914755561",
                 "isHierarchyColumn": false,
@@ -598,7 +791,7 @@
               {
                 "aggregationType": "sum",
                 "alias": "FM",
-                "columnType": "FORMULA",
+                "columnType": "DI",
                 "dataType": "NUMERIC",
                 "id": "13191622219862083007",
                 "isHierarchyColumn": false,
@@ -609,7 +802,7 @@
               {
                 "aggregationType": "sum",
                 "alias": "Forecast",
-                "columnType": "FORECAST",
+                "columnType": "DI",
                 "dataType": "NUMERIC",
                 "id": "14818333406597834857",
                 "isHierarchyColumn": false,
@@ -618,6 +811,7 @@
                 "type": "DOUBLE"
               }
             ],
+            "sourceErrorMessage": "[]",
             "timeIntervalMapping": [],
             "workspaceId": "40e665a1-1bc5-44f9-a2a2-a98e0ba1f12c",
             "workspaceName": "alm-standalone-workspace"

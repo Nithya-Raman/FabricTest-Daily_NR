@@ -46,6 +46,29 @@
       "sidecarHydrationStatus": 10,
       "status": 10,
       "visualId": "01a023d8-1fed-733b-896c-246d8bd5d36a"
+    },
+    {
+      "boundToFilterContext": 10,
+      "columnMeta": {
+        "data_type": "Number",
+        "description": null,
+        "id": "5056113325828878043",
+        "label": "Sum of Forecast",
+        "measure_type": {
+          "Native": {
+            "measure_role": "ACMeasure"
+          }
+        },
+        "name": "Sum of Forecast"
+      },
+      "dataInputType": 6,
+      "description": null,
+      "measureGuid": "5056113325828878043",
+      "name": "Sum of Forecast",
+      "sidecarHydrationLeaseAt": null,
+      "sidecarHydrationStatus": 10,
+      "status": 10,
+      "visualId": "01a023d8-1fed-733b-896c-246d8bd5d36a"
     }
   ]
 }

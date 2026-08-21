@@ -1,5 +1,6 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/plan/definition/Definition/1.0.0/schema.json",
+  "appDBconnection": "57a11f6c-1a5f-4d0e-b99e-d04f851d48ca",
   "cube": {
     "partitionRefIds": []
   },
