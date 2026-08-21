@@ -30,7 +30,129 @@
       "type": 3
     },
     "timeIntervalMapping": [],
-    "workloadLevelFilterAssignments": [],
+    "workloadLevelFilterAssignments": [
+      {
+        "configuration": {
+          "alphaNumericValues": {
+            "equalValue": null,
+            "maxValue": null,
+            "minValue": null
+          },
+          "enableNumericToFacet": false,
+          "filterMode": "basic",
+          "filterOperator": "is",
+          "hide": false,
+          "isExpanded": true,
+          "isSliderAndChartsEnabled": true,
+          "locked": false,
+          "measureFilter": {
+            "maxValue": null,
+            "minValue": null
+          },
+          "measureSearch": true,
+          "name": "Year",
+          "paneWidth": 200,
+          "regex": "",
+          "scale": "none",
+          "selectAll": true,
+          "selectAllState": "UNSELECTED",
+          "sheetDataItemAggregationType": "sum",
+          "singleSelect": false,
+          "slider": false,
+          "sort": [
+            {
+              "columnId": "LocalDateTable_cdf63dda-9846-477a-9745-f4049ae7b78c[Year]",
+              "columnName": "Year",
+              "direction": "ASC",
+              "id": "LocalDateTable_cdf63dda-9846-477a-9745-f4049ae7b78c[Year]"
+            }
+          ],
+          "toolBarTrigger": false,
+          "topN": {
+            "displayOthers": true,
+            "otherLabel": "Others",
+            "rankMeasure": "",
+            "rankMeasureLabel": "",
+            "rankMode": "TOP",
+            "rankType": "value",
+            "rankValue": 5
+          },
+          "visualType": "NUMERIC"
+        },
+        "filter": [
+          {
+            "columnDataType": [
+              "Int64"
+            ],
+            "columnIds": [
+              "LocalDateTable_cdf63dda-9846-477a-9745-f4049ae7b78c[Year]"
+            ],
+            "columnNames": [
+              "Year"
+            ],
+            "columnType": [
+              "Hierarchy Level"
+            ],
+            "dataType": [
+              "number"
+            ],
+            "filterType": "VALUES",
+            "sourceType": [
+              "PowerBI"
+            ],
+            "tableNames": [
+              "LocalDateTable_cdf63dda-9846-477a-9745-f4049ae7b78c"
+            ],
+            "valuesFilter": [
+              {
+                "id": [
+                  2024
+                ],
+                "label": [
+                  2024
+                ]
+              },
+              {
+                "id": [
+                  2025
+                ],
+                "label": [
+                  2025
+                ]
+              }
+            ],
+            "valuesFilterApplicationType": "include"
+          }
+        ],
+        "filterLevel": "global",
+        "id": "filter_1787330807927_e90fg5goc",
+        "pivotAssignments": [
+          {
+            "bucketId": "Category",
+            "columnName": "Year",
+            "columnType": "Hierarchy Level",
+            "contents": "",
+            "dataRoleType": "Grouping",
+            "dataType": "Int64",
+            "distinctValueCount": 0,
+            "formatString": null,
+            "group": "Date[Date]",
+            "groupDataType": "DateTime",
+            "groupLabel": "Date",
+            "hierarchyName": "Date",
+            "id": "LocalDateTable_cdf63dda-9846-477a-9745-f4049ae7b78c[Year]",
+            "isFlatHierarchy": false,
+            "isHierarchyItemInMeasure": true,
+            "name": "Year",
+            "order": 42,
+            "sourceId": "LocalDateTable_cdf63dda-9846-477a-9745-f4049ae7b78c[Year]",
+            "sourceType": "PowerBI",
+            "tableName": "LocalDateTable_cdf63dda-9846-477a-9745-f4049ae7b78c"
+          }
+        ],
+        "position": "RIGHT"
+      }
+    ],
     "workloadLevelQueryFilterAssignments": [],
     "workloadLevelVariables": [],
     "workloadModeConfig": {

@@ -23,6 +23,41 @@
       "sidecarHydrationStatus": 10,
       "status": 10,
       "visualId": "01a0251c-513b-7059-84a6-525721743bf9"
+    },
+    {
+      "boundToFilterContext": 10,
+      "columnMeta": {
+        "data_type": "Number",
+        "description": "",
+        "id": "16371090221075781773",
+        "label": "Number",
+        "measure_type": {
+          "DataInput": {
+            "allow_input": "ReadAndEdit",
+            "bound_to_filter_context": true,
+            "column_type": {
+              "Number": {
+                "default_value": null,
+                "distribute_parent_value_to_children": true,
+                "max_value": null,
+                "min_value": null
+              }
+            },
+            "disable_write_access": false,
+            "id": "",
+            "on_change_formula": "",
+            "title": "Number"
+          }
+        }
+      },
+      "dataInputType": 6,
+      "description": null,
+      "measureGuid": "16371090221075781773",
+      "name": "Number",
+      "sidecarHydrationLeaseAt": null,
+      "sidecarHydrationStatus": 10,
+      "status": 10,
+      "visualId": "01a0251c-513b-7059-84a6-525721743bf9"
     }
   ]
 }
