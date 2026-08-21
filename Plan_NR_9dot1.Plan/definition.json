@@ -1,0 +1,96 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/plan/definition/Definition/1.0.0/schema.json",
+  "appDBconnection": "57a11f6c-1a5f-4d0e-b99e-d04f851d48ca",
+  "cube": {
+    "partitionRefIds": []
+  },
+  "semanticModelReference": {
+    "artifactId": 5310472,
+    "connectionId": "4729486b-a79f-4eb0-83ee-af0918981417",
+    "datasetRelations": [
+      {
+        "dependentArtifactId": 5310472,
+        "settings": "Association"
+      }
+    ],
+    "directLakeMode": false,
+    "directQueryMode": false,
+    "recordGuid": "01a02419-36d1-7484-9dbe-9cd540138a57",
+    "semanticModelId": "2092eb5d-bd6c-442f-8f08-bd0a35598c97",
+    "semanticModelName": "AV_ContosoRetailDW",
+    "semanticModelWorkspaceId": "40e665a1-1bc5-44f9-a2a2-a98e0ba1f12c",
+    "semanticModelWorkspaceName": "alm-standalone-workspace",
+    "sourceType": "WORKLOAD",
+    "url": "https://app.powerbi.com/groups/40e665a1-1bc5-44f9-a2a2-a98e0ba1f12c/datasets/2092eb5d-bd6c-442f-8f08-bd0a35598c97"
+  },
+  "sheets": [
+    {
+      "displayName": "Planning 1",
+      "isHidden": false,
+      "recordGuid": "01a02419-68d9-7319-8fc3-8d6e22715065",
+      "sheetType": "PLANNING",
+      "workloadItemEntityVisuals": [
+        {
+          "isEmbedded": false,
+          "visualId": "01a02419-7313-7775-a9ba-b1414f2e93fe",
+          "visualType": "PLANNING"
+        }
+      ]
+    },
+    {
+      "displayName": "Planning 2",
+      "isHidden": false,
+      "recordGuid": "01a02420-7f1a-75ed-876d-30d7af889330",
+      "sheetType": "PLANNING",
+      "workloadItemEntityVisuals": [
+        {
+          "isEmbedded": false,
+          "visualId": "01a02420-8b8c-700c-b44f-d8c1b459cd4b",
+          "visualType": "PLANNING"
+        }
+      ]
+    },
+    {
+      "displayName": "Intelligence 1",
+      "isHidden": false,
+      "recordGuid": "01a02421-465b-759b-b0cb-b74b6fb3a18a",
+      "sheetType": "REPORTING",
+      "workloadItemEntityVisuals": [
+        {
+          "isEmbedded": true,
+          "visualId": "01a02419-7313-7775-a9ba-b1414f2e93fe",
+          "visualType": "PLANNING"
+        },
+        {
+          "isEmbedded": true,
+          "visualId": "01a02420-8b8c-700c-b44f-d8c1b459cd4b",
+          "visualType": "PLANNING"
+        },
+        {
+          "isEmbedded": false,
+          "visualId": "01a02422-5baf-70aa-9902-4f3e6fecf009",
+          "visualType": "ANALYTICS_PLUS"
+        },
+        {
+          "isEmbedded": false,
+          "visualId": "01a02422-deb1-726d-8d28-fadbe13245b0",
+          "visualType": "ANALYTICS_PLUS"
+        }
+      ]
+    },
+    {
+      "displayName": "retail_data_100k_Products",
+      "isHidden": false,
+      "recordGuid": "01a02424-7f6f-7129-8314-8a3058012d71",
+      "sheetType": "POWERTABLE",
+      "workloadItemEntityVisuals": [
+        {
+          "isEmbedded": false,
+          "visualId": "01a02425-8e46-75f5-9893-5253c399e002",
+          "visualType": "POWERTABLE"
+        }
+      ]
+    }
+  ],
+  "workloadItemName": "Plan_NR_9dot1"
+}

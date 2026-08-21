@@ -1,0 +1,51 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/plan/definition/Planning/Writeback/1.0.0/schema.json",
+  "autoWbEnabledScenarioIds": [],
+  "debounce": {
+    "duration": 5,
+    "isDebounceEnabled": 10
+  },
+  "destinations": [
+    {
+      "connectionId": "57a11f6c-1a5f-4d0e-b99e-d04f851d48ca",
+      "settings": {
+        "artifactRelations": [
+          {
+            "dependentArtifactObjectId": "ba00a417-d824-4b20-b40c-fa7366385ae1",
+            "settings": "PushData"
+          }
+        ],
+        "dbDisplayName": "Fabric_SQL_DB",
+        "dbHost": "4xhqe37ozehu5eo7vloww6h5ke-5ii7o52liiturmikevgbct63r4.daily-database.fabric.microsoft.com",
+        "dbName": "Fabric_SQL_DB-ba00a417-d824-4b20-b40c-fa7366385ae1",
+        "dbSchema": "dbo",
+        "sqlTargetArtifact": {
+          "artifactId": "ba00a417-d824-4b20-b40c-fa7366385ae1",
+          "artifactType": "SQLDbNative",
+          "workspaceId": "77f711ea-424b-4827-b10a-254c114fdb8f"
+        }
+      },
+      "settingsHash": "a622fac00d89d66a882700717d29aa1619d5fa4d86f913e6123b9b999ba6bfd2",
+      "status": 10,
+      "tableName": "Plan_NR_9dot1_WB",
+      "visualId": 1
+    }
+  ],
+  "excludedMeasureGuids": [],
+  "isAutoWritebackEnabled": 20,
+  "isSnapshotWbEnabled": 20,
+  "numberPrecision": {
+    "decimal": 2
+  },
+  "skippedDimensionIds": [],
+  "stringColumnLength": {
+    "length": "512",
+    "type": 1
+  },
+  "wbTableColumnMapping": {},
+  "writebackAsHTML": false,
+  "writebackFilter": {
+    "type": "none"
+  },
+  "writebackType": 2
+}

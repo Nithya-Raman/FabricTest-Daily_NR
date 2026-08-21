@@ -1,0 +1,29 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/plan/definition/PowerTable/Source/1.0.0/schema.json",
+  "source": {
+    "connectionId": "57a11f6c-1a5f-4d0e-b99e-d04f851d48ca",
+    "connectionIdVariable": null,
+    "creationMode": 3,
+    "databaseVariable": null,
+    "dbHost": "4xhqe37ozehu5eo7vloww6h5ke-5ii7o52liiturmikevgbct63r4.daily-database.fabric.microsoft.com",
+    "dbName": "Fabric_SQL_DB-ba00a417-d824-4b20-b40c-fa7366385ae1",
+    "fileImportType": null,
+    "meta": {
+      "databaseId": "ba00a417-d824-4b20-b40c-fa7366385ae1",
+      "dbDisplayName": "Fabric_SQL_DB",
+      "lastRowCountUpdatedAt": 1787312854,
+      "totalRows": 5000,
+      "workspaceId": "77f711ea-424b-4827-b10a-254c114fdb8f",
+      "workspaceName": "alm-int-source-08"
+    },
+    "recordGuid": "9C53390E-569D-F111-A6AA-6045BD73E89F",
+    "schemaName": "dbo",
+    "sqlTargetArtifact": {
+      "artifactId": "ba00a417-d824-4b20-b40c-fa7366385ae1",
+      "artifactType": "SQLDbNative",
+      "workspaceId": "77f711ea-424b-4827-b10a-254c114fdb8f"
+    },
+    "tableName": "retail_data_100k_Products",
+    "tableType": 1
+  }
+}

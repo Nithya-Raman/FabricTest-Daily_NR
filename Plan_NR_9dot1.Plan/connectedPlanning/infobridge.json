@@ -1,0 +1,1385 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/plan/definition/ConnectedPlanning/Infobridge/1.0.0/schema.json",
+  "linkedQueries": [],
+  "queryGroups": [],
+  "sources": [
+    {
+      "meta": {
+        "columnCount": 15,
+        "columns": [
+          {
+            "alias": "Year",
+            "id": "LocalDateTable_cdf63dda-9846-477a-9745-f4049ae7b78c[Year]",
+            "isTimeInterval": true,
+            "level": 0,
+            "name": "Year",
+            "timeIntervalUnit": "YEAR"
+          },
+          {
+            "alias": "Quarter",
+            "id": "LocalDateTable_cdf63dda-9846-477a-9745-f4049ae7b78c[Quarter]",
+            "isTimeInterval": true,
+            "level": 1,
+            "name": "Quarter",
+            "timeIntervalUnit": "QUARTER"
+          },
+          {
+            "alias": "Month",
+            "id": "LocalDateTable_cdf63dda-9846-477a-9745-f4049ae7b78c[Month]",
+            "isTimeInterval": true,
+            "level": 2,
+            "name": "Month",
+            "timeIntervalUnit": "MONTH"
+          }
+        ],
+        "datasetId": "2092eb5d-bd6c-442f-8f08-bd0a35598c97",
+        "datasetName": "AV_ContosoRetailDW",
+        "dateColumns": [
+          {
+            "alias": "DateKey",
+            "isTimeInterval": true,
+            "name": "DateKey"
+          }
+        ],
+        "dateOptions": [
+          {
+            "alias": "Year Key",
+            "display_name": "Year",
+            "fieldType": "YEAR",
+            "formulaQuery": "CAST(YEAR(x) AS INT)",
+            "isTimeInterval": true,
+            "name": "Year",
+            "periodKey": "YEAR",
+            "timeIntervalUnit": "YEAR"
+          },
+          {
+            "alias": "Quarter Key",
+            "fieldType": "QUARTER",
+            "formulaQuery": "CAST(QUARTER(x) AS INT)",
+            "isTimeInterval": true,
+            "name": "Quarter",
+            "periodKey": "QUARTER",
+            "timeIntervalUnit": "QUARTER"
+          },
+          {
+            "alias": "Quarter Name",
+            "fieldType": "QUARTER",
+            "formulaQuery": "('Q' || QUARTER(x))",
+            "isTimeInterval": true,
+            "name": "Quarter Name",
+            "periodKey": "QUARTER_NAME",
+            "timeIntervalUnit": "QUARTER"
+          },
+          {
+            "alias": "Month Key",
+            "fieldType": "MONTH",
+            "formulaQuery": "CAST(MONTH(x) AS INT)",
+            "isTimeInterval": true,
+            "name": "Month",
+            "periodKey": "MONTH",
+            "timeIntervalUnit": "MONTH"
+          },
+          {
+            "alias": "Name Of Month",
+            "fieldType": "MONTH",
+            "formulaQuery": "MONTHNAME(x)",
+            "isTimeInterval": true,
+            "name": "Name Of Month",
+            "periodKey": "NAME_OF_MONTH",
+            "timeIntervalUnit": "MONTH"
+          },
+          {
+            "alias": "Month Name",
+            "fieldType": "MONTH",
+            "formulaQuery": "LEFT(MONTHNAME(x), 3)",
+            "isTimeInterval": true,
+            "name": "Month Name",
+            "periodKey": "MONTH_NAME",
+            "timeIntervalUnit": "MONTH"
+          },
+          {
+            "alias": "Week of Year",
+            "fieldType": "WEEK",
+            "formulaQuery": "CAST(WEEKOFYEAR(x) AS INT)",
+            "isTimeInterval": true,
+            "name": "Week of Year",
+            "periodKey": "WEEK_OF_YEAR",
+            "timeIntervalUnit": "WEEK_OF_YEAR"
+          },
+          {
+            "alias": "Week of Month",
+            "fieldType": "WEEK",
+            "formulaQuery": "CASE\n    WHEN DATEPART('day', x) <= 7 THEN 1\n    WHEN DATEPART('day', x) <= 14 THEN 2\n    WHEN DATEPART('day', x) <= 21 THEN 3\n    WHEN DATEPART('day', x) <= 28 THEN 4\n    ELSE 5\n  END",
+            "isTimeInterval": true,
+            "name": "Week of Month",
+            "periodKey": "WEEK_OF_MONTH",
+            "timeIntervalUnit": "WEEK_OF_MONTH"
+          },
+          {
+            "alias": "Day Key",
+            "fieldType": "DAY",
+            "formulaQuery": "DAYNAME(x)",
+            "isTimeInterval": true,
+            "name": "Day",
+            "periodKey": "DAY",
+            "timeIntervalUnit": "DAY"
+          },
+          {
+            "alias": "Day Key",
+            "fieldType": "DAY",
+            "formulaQuery": "LAST_DAY(x)",
+            "isTimeInterval": true,
+            "name": "Last Day",
+            "periodKey": "DAY",
+            "timeIntervalUnit": "LAST_DAY"
+          },
+          {
+            "alias": "Day of Month",
+            "fieldType": "DAY",
+            "formulaQuery": "CAST(DAYOFMONTH(x) AS INT)",
+            "isTimeInterval": true,
+            "name": "Day of Month",
+            "periodKey": "DAY_OF_MONTH",
+            "timeIntervalUnit": "DAY_OF_MONTH"
+          },
+          {
+            "alias": "Day of Year",
+            "fieldType": "DAY",
+            "formulaQuery": "CAST(DAYOFYEAR(x) AS INT)",
+            "isTimeInterval": true,
+            "name": "Day of Year",
+            "periodKey": "DAY_OF_YEAR",
+            "timeIntervalUnit": "DAY_OF_YEAR"
+          }
+        ],
+        "dimensions": [
+          {
+            "alias": "ClassName",
+            "id": "[DimProduct[[H] Product Hierarchy]]~||~DimProduct[ClassName]",
+            "isTimeInterval": false,
+            "level": 0,
+            "name": "ClassName",
+            "timeIntervalUnit": null
+          },
+          {
+            "alias": "BrandName",
+            "id": "[DimProduct[[H] Product Hierarchy]]~||~DimProduct[BrandName]",
+            "isTimeInterval": false,
+            "level": 1,
+            "name": "BrandName",
+            "timeIntervalUnit": null
+          },
+          {
+            "alias": "ProductCategoryName",
+            "id": "[DimProduct[[H] Product Hierarchy]]~||~DimProduct[ProductCategoryName]",
+            "isTimeInterval": false,
+            "level": 2,
+            "name": "ProductCategoryName",
+            "timeIntervalUnit": null
+          },
+          {
+            "alias": "ProductSubcategoryName",
+            "id": "[DimProduct[[H] Product Hierarchy]]~||~DimProduct[ProductSubcategoryName]",
+            "isTimeInterval": false,
+            "level": 3,
+            "name": "ProductSubcategoryName",
+            "timeIntervalUnit": null
+          }
+        ],
+        "hierarchyColumns": [
+          {
+            "alias": "cellType",
+            "isTimeInterval": false,
+            "name": "cellType",
+            "timeIntervalUnit": null
+          }
+        ],
+        "includeMeasures": [
+          {
+            "alias": "Total Budget",
+            "id": "2759107058914755561",
+            "measureGuid": "2759107058914755561",
+            "name": "Total Budget"
+          },
+          {
+            "alias": "DI",
+            "id": "10729762285401211473",
+            "measureGuid": "10729762285401211473",
+            "name": "DI"
+          },
+          {
+            "alias": "FM",
+            "id": "7673938232367496678",
+            "measureGuid": "7673938232367496678",
+            "name": "FM"
+          },
+          {
+            "alias": "Forecast",
+            "id": "9994548747580941103",
+            "measureGuid": "9994548747580941103",
+            "name": "Forecast"
+          }
+        ],
+        "includeScenarios": [],
+        "isSkipTotals": false,
+        "measures": [
+          {
+            "aggregationType": "sum",
+            "alias": "Total Budget",
+            "columnType": "DI",
+            "dataType": "NUMERIC",
+            "id": "2759107058914755561",
+            "isHierarchyColumn": false,
+            "measureGuid": "2759107058914755561",
+            "name": "Total Budget",
+            "type": "DOUBLE"
+          },
+          {
+            "aggregationType": "sum",
+            "alias": "DI",
+            "columnType": "DI",
+            "dataType": "NUMERIC",
+            "id": "10729762285401211473",
+            "isHierarchyColumn": false,
+            "measureGuid": "10729762285401211473",
+            "name": "DI",
+            "type": "DOUBLE"
+          },
+          {
+            "aggregationType": "sum",
+            "alias": "FM",
+            "columnType": "DI",
+            "dataType": "NUMERIC",
+            "id": "7673938232367496678",
+            "isHierarchyColumn": false,
+            "measureGuid": "7673938232367496678",
+            "name": "FM",
+            "type": "DOUBLE"
+          },
+          {
+            "aggregationType": "sum",
+            "alias": "Forecast",
+            "columnType": "DI",
+            "dataType": "NUMERIC",
+            "id": "9994548747580941103",
+            "isHierarchyColumn": false,
+            "measureGuid": "9994548747580941103",
+            "name": "Forecast",
+            "type": "DOUBLE"
+          }
+        ],
+        "parquetVersion": "v1",
+        "recordCount": 6156,
+        "selectedColumns": [
+          {
+            "alias": "Year",
+            "dataType": "TEXT_COLUMN",
+            "id": "LocalDateTable_cdf63dda-9846-477a-9745-f4049ae7b78c[Year]",
+            "isTimeInterval": true,
+            "level": 0,
+            "name": "Year",
+            "timeIntervalUnit": "YEAR"
+          },
+          {
+            "alias": "Quarter",
+            "dataType": "TEXT_COLUMN",
+            "id": "LocalDateTable_cdf63dda-9846-477a-9745-f4049ae7b78c[Quarter]",
+            "isTimeInterval": true,
+            "level": 1,
+            "name": "Quarter",
+            "timeIntervalUnit": "QUARTER"
+          },
+          {
+            "alias": "Month",
+            "dataType": "TEXT_COLUMN",
+            "id": "LocalDateTable_cdf63dda-9846-477a-9745-f4049ae7b78c[Month]",
+            "isTimeInterval": true,
+            "level": 2,
+            "name": "Month",
+            "timeIntervalUnit": "MONTH"
+          }
+        ],
+        "selectedDateColumns": [
+          {
+            "alias": "DateKey",
+            "dataType": "DATE",
+            "isTimeInterval": true,
+            "name": "DateKey"
+          }
+        ],
+        "selectedDimensions": [
+          {
+            "alias": "ClassName",
+            "dataType": "TEXT_COLUMN",
+            "id": "[DimProduct[[H] Product Hierarchy]]~||~DimProduct[ClassName]",
+            "isTimeInterval": false,
+            "level": 0,
+            "name": "ClassName",
+            "timeIntervalUnit": null
+          },
+          {
+            "alias": "BrandName",
+            "dataType": "TEXT_COLUMN",
+            "id": "[DimProduct[[H] Product Hierarchy]]~||~DimProduct[BrandName]",
+            "isTimeInterval": false,
+            "level": 1,
+            "name": "BrandName",
+            "timeIntervalUnit": null
+          },
+          {
+            "alias": "ProductCategoryName",
+            "dataType": "TEXT_COLUMN",
+            "id": "[DimProduct[[H] Product Hierarchy]]~||~DimProduct[ProductCategoryName]",
+            "isTimeInterval": false,
+            "level": 2,
+            "name": "ProductCategoryName",
+            "timeIntervalUnit": null
+          },
+          {
+            "alias": "ProductSubcategoryName",
+            "dataType": "TEXT_COLUMN",
+            "id": "[DimProduct[[H] Product Hierarchy]]~||~DimProduct[ProductSubcategoryName]",
+            "isTimeInterval": false,
+            "level": 3,
+            "name": "ProductSubcategoryName",
+            "timeIntervalUnit": null
+          }
+        ],
+        "selectedHierarchyColumns": [
+          {
+            "alias": "cellType",
+            "isTimeInterval": false,
+            "name": "cellType",
+            "timeIntervalUnit": null
+          }
+        ],
+        "selectedMeasures": [
+          {
+            "aggregationType": "sum",
+            "alias": "Total Budget",
+            "columnType": "DI",
+            "dataType": "NUMERIC",
+            "id": "2759107058914755561",
+            "isHierarchyColumn": false,
+            "measureGuid": "2759107058914755561",
+            "name": "Total Budget",
+            "type": "DOUBLE"
+          },
+          {
+            "aggregationType": "sum",
+            "alias": "DI",
+            "columnType": "DI",
+            "dataType": "NUMERIC",
+            "id": "10729762285401211473",
+            "isHierarchyColumn": false,
+            "measureGuid": "10729762285401211473",
+            "name": "DI",
+            "type": "DOUBLE"
+          },
+          {
+            "aggregationType": "sum",
+            "alias": "FM",
+            "columnType": "DI",
+            "dataType": "NUMERIC",
+            "id": "7673938232367496678",
+            "isHierarchyColumn": false,
+            "measureGuid": "7673938232367496678",
+            "name": "FM",
+            "type": "DOUBLE"
+          },
+          {
+            "aggregationType": "sum",
+            "alias": "Forecast",
+            "columnType": "DI",
+            "dataType": "NUMERIC",
+            "id": "9994548747580941103",
+            "isHierarchyColumn": false,
+            "measureGuid": "9994548747580941103",
+            "name": "Forecast",
+            "type": "DOUBLE"
+          }
+        ],
+        "sourceErrorMessage": "[]",
+        "timeIntervalMapping": [],
+        "workspaceId": "40e665a1-1bc5-44f9-a2a2-a98e0ba1f12c",
+        "workspaceName": "alm-standalone-workspace"
+      },
+      "name": "Planning 1",
+      "queries": [
+        {
+          "meta": {
+            "columnCount": 14,
+            "columns": [
+              {
+                "alias": "Year",
+                "id": "LocalDateTable_cdf63dda-9846-477a-9745-f4049ae7b78c[Year]",
+                "isTimeInterval": true,
+                "level": 0,
+                "name": "Year",
+                "timeIntervalUnit": "YEAR"
+              },
+              {
+                "alias": "Quarter",
+                "id": "LocalDateTable_cdf63dda-9846-477a-9745-f4049ae7b78c[Quarter]",
+                "isTimeInterval": true,
+                "level": 1,
+                "name": "Quarter",
+                "timeIntervalUnit": "QUARTER"
+              },
+              {
+                "alias": "Month",
+                "id": "LocalDateTable_cdf63dda-9846-477a-9745-f4049ae7b78c[Month]",
+                "isTimeInterval": true,
+                "level": 2,
+                "name": "Month",
+                "timeIntervalUnit": "MONTH"
+              }
+            ],
+            "datasetId": "2092eb5d-bd6c-442f-8f08-bd0a35598c97",
+            "datasetName": "AV_ContosoRetailDW",
+            "dateColumns": [
+              {
+                "alias": "DateKey",
+                "isTimeInterval": true,
+                "name": "DateKey"
+              }
+            ],
+            "dateOptions": [
+              {
+                "alias": "Year Key",
+                "display_name": "Year",
+                "fieldType": "YEAR",
+                "formulaQuery": "CAST(YEAR(x) AS INT)",
+                "isTimeInterval": true,
+                "name": "Year",
+                "periodKey": "YEAR",
+                "timeIntervalUnit": "YEAR"
+              },
+              {
+                "alias": "Quarter Key",
+                "fieldType": "QUARTER",
+                "formulaQuery": "CAST(QUARTER(x) AS INT)",
+                "isTimeInterval": true,
+                "name": "Quarter",
+                "periodKey": "QUARTER",
+                "timeIntervalUnit": "QUARTER"
+              },
+              {
+                "alias": "Quarter Name",
+                "fieldType": "QUARTER",
+                "formulaQuery": "('Q' || QUARTER(x))",
+                "isTimeInterval": true,
+                "name": "Quarter Name",
+                "periodKey": "QUARTER_NAME",
+                "timeIntervalUnit": "QUARTER"
+              },
+              {
+                "alias": "Month Key",
+                "fieldType": "MONTH",
+                "formulaQuery": "CAST(MONTH(x) AS INT)",
+                "isTimeInterval": true,
+                "name": "Month",
+                "periodKey": "MONTH",
+                "timeIntervalUnit": "MONTH"
+              },
+              {
+                "alias": "Name Of Month",
+                "fieldType": "MONTH",
+                "formulaQuery": "MONTHNAME(x)",
+                "isTimeInterval": true,
+                "name": "Name Of Month",
+                "periodKey": "NAME_OF_MONTH",
+                "timeIntervalUnit": "MONTH"
+              },
+              {
+                "alias": "Month Name",
+                "fieldType": "MONTH",
+                "formulaQuery": "LEFT(MONTHNAME(x), 3)",
+                "isTimeInterval": true,
+                "name": "Month Name",
+                "periodKey": "MONTH_NAME",
+                "timeIntervalUnit": "MONTH"
+              },
+              {
+                "alias": "Week of Year",
+                "fieldType": "WEEK",
+                "formulaQuery": "CAST(WEEKOFYEAR(x) AS INT)",
+                "isTimeInterval": true,
+                "name": "Week of Year",
+                "periodKey": "WEEK_OF_YEAR",
+                "timeIntervalUnit": "WEEK_OF_YEAR"
+              },
+              {
+                "alias": "Week of Month",
+                "fieldType": "WEEK",
+                "formulaQuery": "CASE\n    WHEN DATEPART('day', x) <= 7 THEN 1\n    WHEN DATEPART('day', x) <= 14 THEN 2\n    WHEN DATEPART('day', x) <= 21 THEN 3\n    WHEN DATEPART('day', x) <= 28 THEN 4\n    ELSE 5\n  END",
+                "isTimeInterval": true,
+                "name": "Week of Month",
+                "periodKey": "WEEK_OF_MONTH",
+                "timeIntervalUnit": "WEEK_OF_MONTH"
+              },
+              {
+                "alias": "Day Key",
+                "fieldType": "DAY",
+                "formulaQuery": "DAYNAME(x)",
+                "isTimeInterval": true,
+                "name": "Day",
+                "periodKey": "DAY",
+                "timeIntervalUnit": "DAY"
+              },
+              {
+                "alias": "Day Key",
+                "fieldType": "DAY",
+                "formulaQuery": "LAST_DAY(x)",
+                "isTimeInterval": true,
+                "name": "Last Day",
+                "periodKey": "DAY",
+                "timeIntervalUnit": "LAST_DAY"
+              },
+              {
+                "alias": "Day of Month",
+                "fieldType": "DAY",
+                "formulaQuery": "CAST(DAYOFMONTH(x) AS INT)",
+                "isTimeInterval": true,
+                "name": "Day of Month",
+                "periodKey": "DAY_OF_MONTH",
+                "timeIntervalUnit": "DAY_OF_MONTH"
+              },
+              {
+                "alias": "Day of Year",
+                "fieldType": "DAY",
+                "formulaQuery": "CAST(DAYOFYEAR(x) AS INT)",
+                "isTimeInterval": true,
+                "name": "Day of Year",
+                "periodKey": "DAY_OF_YEAR",
+                "timeIntervalUnit": "DAY_OF_YEAR"
+              }
+            ],
+            "dimensions": [
+              {
+                "alias": "ClassName",
+                "id": "[DimProduct[[H] Product Hierarchy]]~||~DimProduct[ClassName]",
+                "isTimeInterval": false,
+                "level": 0,
+                "name": "ClassName",
+                "timeIntervalUnit": null
+              },
+              {
+                "alias": "BrandName",
+                "id": "[DimProduct[[H] Product Hierarchy]]~||~DimProduct[BrandName]",
+                "isTimeInterval": false,
+                "level": 1,
+                "name": "BrandName",
+                "timeIntervalUnit": null
+              },
+              {
+                "alias": "ProductCategoryName",
+                "id": "[DimProduct[[H] Product Hierarchy]]~||~DimProduct[ProductCategoryName]",
+                "isTimeInterval": false,
+                "level": 2,
+                "name": "ProductCategoryName",
+                "timeIntervalUnit": null
+              },
+              {
+                "alias": "ProductSubcategoryName",
+                "id": "[DimProduct[[H] Product Hierarchy]]~||~DimProduct[ProductSubcategoryName]",
+                "isTimeInterval": false,
+                "level": 3,
+                "name": "ProductSubcategoryName",
+                "timeIntervalUnit": null
+              }
+            ],
+            "flatData": true,
+            "hierarchyColumns": [
+              {
+                "alias": "cellType",
+                "isTimeInterval": false,
+                "name": "cellType",
+                "timeIntervalUnit": null
+              }
+            ],
+            "includeMeasures": [
+              {
+                "alias": "Total Budget",
+                "id": "2759107058914755561",
+                "measureGuid": "2759107058914755561",
+                "name": "Total Budget"
+              },
+              {
+                "alias": "DI",
+                "id": "10729762285401211473",
+                "measureGuid": "10729762285401211473",
+                "name": "DI"
+              },
+              {
+                "alias": "FM",
+                "id": "7673938232367496678",
+                "measureGuid": "7673938232367496678",
+                "name": "FM"
+              },
+              {
+                "alias": "Forecast",
+                "id": "9994548747580941103",
+                "measureGuid": "9994548747580941103",
+                "name": "Forecast"
+              }
+            ],
+            "includeScenarios": [],
+            "isSkipTotals": false,
+            "measures": [
+              {
+                "aggregationType": "sum",
+                "alias": "Total Budget",
+                "columnType": "DI",
+                "dataType": "NUMERIC",
+                "id": "2759107058914755561",
+                "isHierarchyColumn": false,
+                "measureGuid": "2759107058914755561",
+                "name": "Total Budget",
+                "type": "DOUBLE"
+              },
+              {
+                "aggregationType": "sum",
+                "alias": "DI",
+                "columnType": "DI",
+                "dataType": "NUMERIC",
+                "id": "10729762285401211473",
+                "isHierarchyColumn": false,
+                "measureGuid": "10729762285401211473",
+                "name": "DI",
+                "type": "DOUBLE"
+              },
+              {
+                "aggregationType": "sum",
+                "alias": "FM",
+                "columnType": "DI",
+                "dataType": "NUMERIC",
+                "id": "7673938232367496678",
+                "isHierarchyColumn": false,
+                "measureGuid": "7673938232367496678",
+                "name": "FM",
+                "type": "DOUBLE"
+              },
+              {
+                "aggregationType": "sum",
+                "alias": "Forecast",
+                "columnType": "DI",
+                "dataType": "NUMERIC",
+                "id": "9994548747580941103",
+                "isHierarchyColumn": false,
+                "measureGuid": "9994548747580941103",
+                "name": "Forecast",
+                "type": "DOUBLE"
+              }
+            ],
+            "parquetVersion": "v1",
+            "recordCount": 6156,
+            "selectedColumns": [
+              {
+                "alias": "Year",
+                "dataType": "TEXT_COLUMN",
+                "id": "LocalDateTable_cdf63dda-9846-477a-9745-f4049ae7b78c[Year]",
+                "isTimeInterval": true,
+                "level": 0,
+                "name": "Year",
+                "timeIntervalUnit": "YEAR",
+                "type": "VARCHAR"
+              },
+              {
+                "alias": "Quarter",
+                "dataType": "TEXT_COLUMN",
+                "id": "LocalDateTable_cdf63dda-9846-477a-9745-f4049ae7b78c[Quarter]",
+                "isTimeInterval": true,
+                "level": 1,
+                "name": "Quarter",
+                "timeIntervalUnit": "QUARTER",
+                "type": "VARCHAR"
+              },
+              {
+                "alias": "Month",
+                "dataType": "TEXT_COLUMN",
+                "id": "LocalDateTable_cdf63dda-9846-477a-9745-f4049ae7b78c[Month]",
+                "isTimeInterval": true,
+                "level": 2,
+                "name": "Month",
+                "timeIntervalUnit": "MONTH",
+                "type": "VARCHAR"
+              }
+            ],
+            "selectedDateColumns": [
+              {
+                "alias": "DateKey",
+                "dataType": "DATE",
+                "isTimeInterval": true,
+                "name": "DateKey",
+                "type": "DATE"
+              }
+            ],
+            "selectedDimensions": [
+              {
+                "alias": "ClassName",
+                "dataType": "TEXT_COLUMN",
+                "id": "[DimProduct[[H] Product Hierarchy]]~||~DimProduct[ClassName]",
+                "isTimeInterval": false,
+                "level": 0,
+                "name": "ClassName",
+                "timeIntervalUnit": null,
+                "type": "VARCHAR"
+              },
+              {
+                "alias": "BrandName",
+                "dataType": "TEXT_COLUMN",
+                "id": "[DimProduct[[H] Product Hierarchy]]~||~DimProduct[BrandName]",
+                "isTimeInterval": false,
+                "level": 1,
+                "name": "BrandName",
+                "timeIntervalUnit": null,
+                "type": "VARCHAR"
+              },
+              {
+                "alias": "ProductCategoryName",
+                "dataType": "TEXT_COLUMN",
+                "id": "[DimProduct[[H] Product Hierarchy]]~||~DimProduct[ProductCategoryName]",
+                "isTimeInterval": false,
+                "level": 2,
+                "name": "ProductCategoryName",
+                "timeIntervalUnit": null,
+                "type": "VARCHAR"
+              },
+              {
+                "alias": "ProductSubcategoryName",
+                "dataType": "TEXT_COLUMN",
+                "id": "[DimProduct[[H] Product Hierarchy]]~||~DimProduct[ProductSubcategoryName]",
+                "isTimeInterval": false,
+                "level": 3,
+                "name": "ProductSubcategoryName",
+                "timeIntervalUnit": null,
+                "type": "VARCHAR"
+              }
+            ],
+            "selectedHierarchyColumns": [
+              {
+                "alias": "cellType",
+                "isTimeInterval": false,
+                "name": "cellType",
+                "timeIntervalUnit": null
+              }
+            ],
+            "selectedMeasures": [
+              {
+                "aggregationType": "sum",
+                "alias": "Total Budget",
+                "columnType": "DI",
+                "dataType": "NUMERIC",
+                "id": "2759107058914755561",
+                "isHierarchyColumn": false,
+                "measureGuid": "2759107058914755561",
+                "name": "Total Budget",
+                "type": "DOUBLE"
+              },
+              {
+                "aggregationType": "sum",
+                "alias": "DI",
+                "columnType": "DI",
+                "dataType": "NUMERIC",
+                "id": "10729762285401211473",
+                "isHierarchyColumn": false,
+                "measureGuid": "10729762285401211473",
+                "name": "DI",
+                "type": "DOUBLE"
+              },
+              {
+                "aggregationType": "sum",
+                "alias": "FM",
+                "columnType": "DI",
+                "dataType": "NUMERIC",
+                "id": "7673938232367496678",
+                "isHierarchyColumn": false,
+                "measureGuid": "7673938232367496678",
+                "name": "FM",
+                "type": "DOUBLE"
+              },
+              {
+                "aggregationType": "sum",
+                "alias": "Forecast",
+                "columnType": "DI",
+                "dataType": "NUMERIC",
+                "id": "9994548747580941103",
+                "isHierarchyColumn": false,
+                "measureGuid": "9994548747580941103",
+                "name": "Forecast",
+                "type": "DOUBLE"
+              }
+            ],
+            "sourceErrorMessage": "[]",
+            "timeIntervalMapping": [],
+            "workspaceId": "40e665a1-1bc5-44f9-a2a2-a98e0ba1f12c",
+            "workspaceName": "alm-standalone-workspace"
+          },
+          "name": "Query 1 -  Planning 1",
+          "queryId": "Qa056cb2dd8d84af7baf5216c9e156d8d",
+          "sourceId": "DE03601D-559D-F111-A6AA-6045BD73E89F",
+          "transformationSteps": [
+            {
+              "meta": {
+                "description": "Inforiver data loaded",
+                "name": "Query from Planning 1",
+                "type": 10,
+                "value": {}
+              },
+              "notes": null,
+              "queryId": "Qa056cb2dd8d84af7baf5216c9e156d8d",
+              "stepIndex": 1
+            }
+          ],
+          "type": "PLANNING",
+          "visualId": "01A02419-7313-7775-A9BA-B1414F2E93FE",
+          "writebackDestinations": [],
+          "writebackSettings": null
+        },
+        {
+          "meta": {
+            "columnCount": 12,
+            "columns": [
+              {
+                "alias": "Year",
+                "id": "LocalDateTable_cdf63dda-9846-477a-9745-f4049ae7b78c[Year]",
+                "isTimeInterval": true,
+                "level": 0,
+                "name": "Year",
+                "timeIntervalUnit": "YEAR"
+              },
+              {
+                "alias": "Quarter",
+                "id": "LocalDateTable_cdf63dda-9846-477a-9745-f4049ae7b78c[Quarter]",
+                "isTimeInterval": true,
+                "level": 1,
+                "name": "Quarter",
+                "timeIntervalUnit": "QUARTER"
+              },
+              {
+                "alias": "Month",
+                "id": "LocalDateTable_cdf63dda-9846-477a-9745-f4049ae7b78c[Month]",
+                "isTimeInterval": true,
+                "level": 2,
+                "name": "Month",
+                "timeIntervalUnit": "MONTH"
+              }
+            ],
+            "datasetId": "2092eb5d-bd6c-442f-8f08-bd0a35598c97",
+            "datasetName": "AV_ContosoRetailDW",
+            "dateColumns": [
+              {
+                "alias": "DateKey",
+                "isTimeInterval": true,
+                "name": "DateKey"
+              }
+            ],
+            "dateOptions": [
+              {
+                "alias": "Year Key",
+                "display_name": "Year",
+                "fieldType": "YEAR",
+                "formulaQuery": "CAST(YEAR(x) AS INT)",
+                "isTimeInterval": true,
+                "name": "Year",
+                "periodKey": "YEAR",
+                "timeIntervalUnit": "YEAR"
+              },
+              {
+                "alias": "Quarter Key",
+                "fieldType": "QUARTER",
+                "formulaQuery": "CAST(QUARTER(x) AS INT)",
+                "isTimeInterval": true,
+                "name": "Quarter",
+                "periodKey": "QUARTER",
+                "timeIntervalUnit": "QUARTER"
+              },
+              {
+                "alias": "Quarter Name",
+                "fieldType": "QUARTER",
+                "formulaQuery": "('Q' || QUARTER(x))",
+                "isTimeInterval": true,
+                "name": "Quarter Name",
+                "periodKey": "QUARTER_NAME",
+                "timeIntervalUnit": "QUARTER"
+              },
+              {
+                "alias": "Month Key",
+                "fieldType": "MONTH",
+                "formulaQuery": "CAST(MONTH(x) AS INT)",
+                "isTimeInterval": true,
+                "name": "Month",
+                "periodKey": "MONTH",
+                "timeIntervalUnit": "MONTH"
+              },
+              {
+                "alias": "Name Of Month",
+                "fieldType": "MONTH",
+                "formulaQuery": "MONTHNAME(x)",
+                "isTimeInterval": true,
+                "name": "Name Of Month",
+                "periodKey": "NAME_OF_MONTH",
+                "timeIntervalUnit": "MONTH"
+              },
+              {
+                "alias": "Month Name",
+                "fieldType": "MONTH",
+                "formulaQuery": "LEFT(MONTHNAME(x), 3)",
+                "isTimeInterval": true,
+                "name": "Month Name",
+                "periodKey": "MONTH_NAME",
+                "timeIntervalUnit": "MONTH"
+              },
+              {
+                "alias": "Week of Year",
+                "fieldType": "WEEK",
+                "formulaQuery": "CAST(WEEKOFYEAR(x) AS INT)",
+                "isTimeInterval": true,
+                "name": "Week of Year",
+                "periodKey": "WEEK_OF_YEAR",
+                "timeIntervalUnit": "WEEK_OF_YEAR"
+              },
+              {
+                "alias": "Week of Month",
+                "fieldType": "WEEK",
+                "formulaQuery": "CASE\n    WHEN DATEPART('day', x) <= 7 THEN 1\n    WHEN DATEPART('day', x) <= 14 THEN 2\n    WHEN DATEPART('day', x) <= 21 THEN 3\n    WHEN DATEPART('day', x) <= 28 THEN 4\n    ELSE 5\n  END",
+                "isTimeInterval": true,
+                "name": "Week of Month",
+                "periodKey": "WEEK_OF_MONTH",
+                "timeIntervalUnit": "WEEK_OF_MONTH"
+              },
+              {
+                "alias": "Day Key",
+                "fieldType": "DAY",
+                "formulaQuery": "DAYNAME(x)",
+                "isTimeInterval": true,
+                "name": "Day",
+                "periodKey": "DAY",
+                "timeIntervalUnit": "DAY"
+              },
+              {
+                "alias": "Day Key",
+                "fieldType": "DAY",
+                "formulaQuery": "LAST_DAY(x)",
+                "isTimeInterval": true,
+                "name": "Last Day",
+                "periodKey": "DAY",
+                "timeIntervalUnit": "LAST_DAY"
+              },
+              {
+                "alias": "Day of Month",
+                "fieldType": "DAY",
+                "formulaQuery": "CAST(DAYOFMONTH(x) AS INT)",
+                "isTimeInterval": true,
+                "name": "Day of Month",
+                "periodKey": "DAY_OF_MONTH",
+                "timeIntervalUnit": "DAY_OF_MONTH"
+              },
+              {
+                "alias": "Day of Year",
+                "fieldType": "DAY",
+                "formulaQuery": "CAST(DAYOFYEAR(x) AS INT)",
+                "isTimeInterval": true,
+                "name": "Day of Year",
+                "periodKey": "DAY_OF_YEAR",
+                "timeIntervalUnit": "DAY_OF_YEAR"
+              }
+            ],
+            "dimensions": [
+              {
+                "alias": "ClassName",
+                "id": "[DimProduct[[H] Product Hierarchy]]~||~DimProduct[ClassName]",
+                "isTimeInterval": false,
+                "level": 0,
+                "name": "ClassName",
+                "timeIntervalUnit": null
+              },
+              {
+                "alias": "BrandName",
+                "id": "[DimProduct[[H] Product Hierarchy]]~||~DimProduct[BrandName]",
+                "isTimeInterval": false,
+                "level": 1,
+                "name": "BrandName",
+                "timeIntervalUnit": null
+              },
+              {
+                "alias": "ProductCategoryName",
+                "id": "[DimProduct[[H] Product Hierarchy]]~||~DimProduct[ProductCategoryName]",
+                "isTimeInterval": false,
+                "level": 2,
+                "name": "ProductCategoryName",
+                "timeIntervalUnit": null
+              },
+              {
+                "alias": "ProductSubcategoryName",
+                "id": "[DimProduct[[H] Product Hierarchy]]~||~DimProduct[ProductSubcategoryName]",
+                "isTimeInterval": false,
+                "level": 3,
+                "name": "ProductSubcategoryName",
+                "timeIntervalUnit": null
+              }
+            ],
+            "flatData": true,
+            "hierarchyColumns": [
+              {
+                "alias": "cellType",
+                "isTimeInterval": false,
+                "name": "cellType",
+                "timeIntervalUnit": null
+              }
+            ],
+            "includeMeasures": [
+              {
+                "alias": "Total Budget",
+                "id": "2759107058914755561",
+                "measureGuid": "2759107058914755561",
+                "name": "Total Budget"
+              },
+              {
+                "alias": "DI",
+                "id": "10729762285401211473",
+                "measureGuid": "10729762285401211473",
+                "name": "DI"
+              },
+              {
+                "alias": "FM",
+                "id": "7673938232367496678",
+                "measureGuid": "7673938232367496678",
+                "name": "FM"
+              },
+              {
+                "alias": "Forecast",
+                "id": "9994548747580941103",
+                "measureGuid": "9994548747580941103",
+                "name": "Forecast"
+              }
+            ],
+            "includeScenarios": [],
+            "isSkipTotals": false,
+            "measures": [
+              {
+                "aggregationType": "sum",
+                "alias": "Total Budget",
+                "columnType": "DI",
+                "dataType": "NUMERIC",
+                "id": "2759107058914755561",
+                "isHierarchyColumn": false,
+                "measureGuid": "2759107058914755561",
+                "name": "Total Budget",
+                "type": "DOUBLE"
+              },
+              {
+                "aggregationType": "sum",
+                "alias": "DI",
+                "columnType": "DI",
+                "dataType": "NUMERIC",
+                "id": "10729762285401211473",
+                "isHierarchyColumn": false,
+                "measureGuid": "10729762285401211473",
+                "name": "DI",
+                "type": "DOUBLE"
+              },
+              {
+                "aggregationType": "sum",
+                "alias": "FM",
+                "columnType": "DI",
+                "dataType": "NUMERIC",
+                "id": "7673938232367496678",
+                "isHierarchyColumn": false,
+                "measureGuid": "7673938232367496678",
+                "name": "FM",
+                "type": "DOUBLE"
+              },
+              {
+                "aggregationType": "sum",
+                "alias": "Forecast",
+                "columnType": "DI",
+                "dataType": "NUMERIC",
+                "id": "9994548747580941103",
+                "isHierarchyColumn": false,
+                "measureGuid": "9994548747580941103",
+                "name": "Forecast",
+                "type": "DOUBLE"
+              }
+            ],
+            "parquetVersion": "v1",
+            "recordCount": 1008,
+            "selectedColumns": [
+              {
+                "alias": "Year",
+                "dataType": "TEXT_COLUMN",
+                "id": "LocalDateTable_cdf63dda-9846-477a-9745-f4049ae7b78c[Year]",
+                "isTimeInterval": true,
+                "level": 0,
+                "name": "Year",
+                "timeIntervalUnit": "YEAR",
+                "type": "VARCHAR"
+              },
+              {
+                "alias": "Quarter",
+                "dataType": "TEXT_COLUMN",
+                "id": "LocalDateTable_cdf63dda-9846-477a-9745-f4049ae7b78c[Quarter]",
+                "isTimeInterval": true,
+                "level": 1,
+                "name": "Quarter",
+                "timeIntervalUnit": "QUARTER",
+                "type": "VARCHAR"
+              }
+            ],
+            "selectedDateColumns": [
+              {
+                "alias": "DateKey",
+                "dataType": "DATE",
+                "isTimeInterval": true,
+                "name": "DateKey",
+                "type": "DATE"
+              }
+            ],
+            "selectedDimensions": [
+              {
+                "alias": "ClassName",
+                "dataType": "TEXT_COLUMN",
+                "id": "[DimProduct[[H] Product Hierarchy]]~||~DimProduct[ClassName]",
+                "isTimeInterval": false,
+                "level": 0,
+                "name": "ClassName",
+                "timeIntervalUnit": null,
+                "type": "VARCHAR"
+              },
+              {
+                "alias": "BrandName",
+                "dataType": "TEXT_COLUMN",
+                "id": "[DimProduct[[H] Product Hierarchy]]~||~DimProduct[BrandName]",
+                "isTimeInterval": false,
+                "level": 1,
+                "name": "BrandName",
+                "timeIntervalUnit": null,
+                "type": "VARCHAR"
+              },
+              {
+                "alias": "ProductCategoryName",
+                "dataType": "TEXT_COLUMN",
+                "id": "[DimProduct[[H] Product Hierarchy]]~||~DimProduct[ProductCategoryName]",
+                "isTimeInterval": false,
+                "level": 2,
+                "name": "ProductCategoryName",
+                "timeIntervalUnit": null,
+                "type": "VARCHAR"
+              }
+            ],
+            "selectedHierarchyColumns": [
+              {
+                "alias": "cellType",
+                "isTimeInterval": false,
+                "name": "cellType",
+                "timeIntervalUnit": null
+              }
+            ],
+            "selectedMeasures": [
+              {
+                "aggregationType": "sum",
+                "alias": "Total Budget",
+                "columnType": "DI",
+                "dataType": "NUMERIC",
+                "id": "2759107058914755561",
+                "isHierarchyColumn": false,
+                "measureGuid": "2759107058914755561",
+                "name": "Total Budget",
+                "type": "DOUBLE"
+              },
+              {
+                "aggregationType": "sum",
+                "alias": "DI",
+                "columnType": "DI",
+                "dataType": "NUMERIC",
+                "id": "10729762285401211473",
+                "isHierarchyColumn": false,
+                "measureGuid": "10729762285401211473",
+                "name": "DI",
+                "type": "DOUBLE"
+              },
+              {
+                "aggregationType": "sum",
+                "alias": "FM",
+                "columnType": "DI",
+                "dataType": "NUMERIC",
+                "id": "7673938232367496678",
+                "isHierarchyColumn": false,
+                "measureGuid": "7673938232367496678",
+                "name": "FM",
+                "type": "DOUBLE"
+              },
+              {
+                "aggregationType": "sum",
+                "alias": "Forecast",
+                "columnType": "DI",
+                "dataType": "NUMERIC",
+                "id": "9994548747580941103",
+                "isHierarchyColumn": false,
+                "measureGuid": "9994548747580941103",
+                "name": "Forecast",
+                "type": "DOUBLE"
+              }
+            ],
+            "sourceErrorMessage": "[]",
+            "timeIntervalMapping": [],
+            "workspaceId": "40e665a1-1bc5-44f9-a2a2-a98e0ba1f12c",
+            "workspaceName": "alm-standalone-workspace"
+          },
+          "name": "Copy of Query 1 -  Planning 1",
+          "queryId": "Qaa2257991d9044318c14e7c2df43527d",
+          "sourceId": "DE03601D-559D-F111-A6AA-6045BD73E89F",
+          "transformationSteps": [
+            {
+              "meta": {
+                "description": "Inforiver data loaded",
+                "name": "Query from Planning 1",
+                "type": 10,
+                "value": {}
+              },
+              "notes": null,
+              "queryId": "Qaa2257991d9044318c14e7c2df43527d",
+              "stepIndex": 1
+            },
+            {
+              "meta": {
+                "description": "<strong>Dimensions:</strong> ClassName,BrandName,ProductCategoryName <br/><strong>Columns:</strong> Year,Quarter <br/><strong>Measures:</strong> Total Budget(sum),DI(sum),FM(sum),Forecast(sum)",
+                "name": "Pivot table created",
+                "type": 50,
+                "value": {
+                  "isValid": true,
+                  "removeColumns": [
+                    {
+                      "alias": "ProductSubcategoryName",
+                      "id": "[DimProduct[[H] Product Hierarchy]]~||~DimProduct[ProductSubcategoryName]",
+                      "isTimeInterval": false,
+                      "level": 3,
+                      "name": "ProductSubcategoryName",
+                      "timeIntervalUnit": null,
+                      "type": "VARCHAR"
+                    },
+                    {
+                      "alias": "Month",
+                      "id": "LocalDateTable_cdf63dda-9846-477a-9745-f4049ae7b78c[Month]",
+                      "isTimeInterval": true,
+                      "level": 2,
+                      "name": "Month",
+                      "timeIntervalUnit": "MONTH",
+                      "type": "VARCHAR"
+                    }
+                  ],
+                  "sourceColumns": [
+                    {
+                      "alias": "Year",
+                      "id": "LocalDateTable_cdf63dda-9846-477a-9745-f4049ae7b78c[Year]",
+                      "isTimeInterval": true,
+                      "level": 0,
+                      "name": "Year",
+                      "timeIntervalUnit": "YEAR",
+                      "type": "VARCHAR"
+                    },
+                    {
+                      "alias": "Quarter",
+                      "id": "LocalDateTable_cdf63dda-9846-477a-9745-f4049ae7b78c[Quarter]",
+                      "isTimeInterval": true,
+                      "level": 1,
+                      "name": "Quarter",
+                      "timeIntervalUnit": "QUARTER",
+                      "type": "VARCHAR"
+                    }
+                  ],
+                  "sourceDimensions": [
+                    {
+                      "alias": "ClassName",
+                      "id": "[DimProduct[[H] Product Hierarchy]]~||~DimProduct[ClassName]",
+                      "isTimeInterval": false,
+                      "level": 0,
+                      "name": "ClassName",
+                      "timeIntervalUnit": null,
+                      "type": "VARCHAR"
+                    },
+                    {
+                      "alias": "BrandName",
+                      "id": "[DimProduct[[H] Product Hierarchy]]~||~DimProduct[BrandName]",
+                      "isTimeInterval": false,
+                      "level": 1,
+                      "name": "BrandName",
+                      "timeIntervalUnit": null,
+                      "type": "VARCHAR"
+                    },
+                    {
+                      "alias": "ProductCategoryName",
+                      "id": "[DimProduct[[H] Product Hierarchy]]~||~DimProduct[ProductCategoryName]",
+                      "isTimeInterval": false,
+                      "level": 2,
+                      "name": "ProductCategoryName",
+                      "timeIntervalUnit": null,
+                      "type": "VARCHAR"
+                    }
+                  ],
+                  "sourceMeasures": [
+                    {
+                      "aggregationType": "sum",
+                      "alias": "Total Budget",
+                      "columnType": "DI",
+                      "dataType": "NUMERIC",
+                      "id": "2759107058914755561",
+                      "isHierarchyColumn": false,
+                      "measureGuid": "2759107058914755561",
+                      "name": "Total Budget",
+                      "type": "DOUBLE"
+                    },
+                    {
+                      "aggregationType": "sum",
+                      "alias": "DI",
+                      "columnType": "DI",
+                      "dataType": "NUMERIC",
+                      "id": "10729762285401211473",
+                      "isHierarchyColumn": false,
+                      "measureGuid": "10729762285401211473",
+                      "name": "DI",
+                      "type": "DOUBLE"
+                    },
+                    {
+                      "aggregationType": "sum",
+                      "alias": "FM",
+                      "columnType": "DI",
+                      "dataType": "NUMERIC",
+                      "id": "7673938232367496678",
+                      "isHierarchyColumn": false,
+                      "measureGuid": "7673938232367496678",
+                      "name": "FM",
+                      "type": "DOUBLE"
+                    },
+                    {
+                      "aggregationType": "sum",
+                      "alias": "Forecast",
+                      "columnType": "DI",
+                      "dataType": "NUMERIC",
+                      "id": "9994548747580941103",
+                      "isHierarchyColumn": false,
+                      "measureGuid": "9994548747580941103",
+                      "name": "Forecast",
+                      "type": "DOUBLE"
+                    }
+                  ]
+                }
+              },
+              "notes": null,
+              "queryId": "Qaa2257991d9044318c14e7c2df43527d",
+              "stepIndex": 2
+            }
+          ],
+          "type": "PLANNING",
+          "visualId": "01A02419-7313-7775-A9BA-B1414F2E93FE",
+          "writebackDestinations": [],
+          "writebackSettings": null
+        }
+      ],
+      "sourceGuid": "DE03601D-559D-F111-A6AA-6045BD73E89F",
+      "type": "PLANNING",
+      "visualId": "01A02419-7313-7775-A9BA-B1414F2E93FE"
+    }
+  ]
+}
