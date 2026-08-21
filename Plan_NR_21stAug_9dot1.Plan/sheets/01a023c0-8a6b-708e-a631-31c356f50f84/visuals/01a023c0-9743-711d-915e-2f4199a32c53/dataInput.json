@@ -1,0 +1,140 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/plan/definition/Planning/DataInput/1.0.0/schema.json",
+  "columns": [
+    {
+      "boundToFilterContext": 10,
+      "columnMeta": {
+        "data_type": "Number",
+        "description": null,
+        "id": "2759107058914755561",
+        "label": "Total Budget",
+        "measure_type": {
+          "Native": {
+            "measure_role": "ACMeasure"
+          }
+        },
+        "name": "Total Budget"
+      },
+      "dataInputType": 6,
+      "description": null,
+      "measureGuid": "2759107058914755561",
+      "name": "Total Budget",
+      "sidecarHydrationLeaseAt": null,
+      "sidecarHydrationStatus": 10,
+      "status": 10,
+      "visualId": "01a023c0-9743-711d-915e-2f4199a32c53"
+    },
+    {
+      "boundToFilterContext": 10,
+      "columnMeta": {
+        "data_type": "Number",
+        "description": "",
+        "id": "3166882672870582148",
+        "label": "DI",
+        "measure_type": {
+          "DataInput": {
+            "allow_input": "ReadAndEdit",
+            "bound_to_filter_context": true,
+            "column_type": {
+              "Number": {
+                "default_value": null,
+                "distribute_parent_value_to_children": true,
+                "max_value": null,
+                "min_value": null
+              }
+            },
+            "disable_write_access": false,
+            "id": "",
+            "on_change_formula": "",
+            "title": "DI"
+          }
+        }
+      },
+      "dataInputType": 6,
+      "description": null,
+      "measureGuid": "3166882672870582148",
+      "name": "DI",
+      "sidecarHydrationLeaseAt": null,
+      "sidecarHydrationStatus": 10,
+      "status": 10,
+      "visualId": "01a023c0-9743-711d-915e-2f4199a32c53"
+    },
+    {
+      "boundToFilterContext": 20,
+      "columnMeta": {
+        "data_type": "Number",
+        "description": "",
+        "id": "13191622219862083007",
+        "label": "FM",
+        "measure_type": {
+          "Formula": {
+            "formula": "M_3166882672870582148*2"
+          }
+        }
+      },
+      "dataInputType": 6,
+      "description": null,
+      "measureGuid": "13191622219862083007",
+      "name": "FM",
+      "sidecarHydrationLeaseAt": null,
+      "sidecarHydrationStatus": 10,
+      "status": 10,
+      "visualId": "01a023c0-9743-711d-915e-2f4199a32c53"
+    },
+    {
+      "boundToFilterContext": 10,
+      "columnMeta": {
+        "data_type": "Number",
+        "description": "",
+        "id": "14818333406597834857",
+        "label": "Forecast",
+        "measure_type": {
+          "Forecast": {
+            "auto_close_forecast_settings": null,
+            "bound_to_filter_context": true,
+            "closed_period_config": {
+              "method": {
+                "LinkToMeasure": "2759107058914755561"
+              }
+            },
+            "closed_period_till": null,
+            "disable_write_access": false,
+            "edit_config": {
+              "aggregate_total": null,
+              "allow_input": "ReadAndEdit",
+              "number_column_metadata": {
+                "default_value": null,
+                "distribute_parent_value_to_children": true,
+                "max_value": null,
+                "min_value": null
+              },
+              "on_change_formula": null
+            },
+            "forecast_allowed_user_permissions": true,
+            "forecast_period": {
+              "end": "2026-12-31T00:00:00.000Z",
+              "end_utc": 1798741799,
+              "start": "2026-01-01T00:00:00.000Z",
+              "start_utc": 1767205800
+            },
+            "forecast_value_display": "Actual",
+            "forecast_version": 1,
+            "open_period_config": {
+              "method": {
+                "DataInput": "Blank"
+              }
+            }
+          }
+        }
+      },
+      "dataInputType": 6,
+      "description": null,
+      "measureGuid": "14818333406597834857",
+      "name": "Forecast",
+      "sidecarHydrationLeaseAt": null,
+      "sidecarHydrationStatus": 10,
+      "status": 10,
+      "visualId": "01a023c0-9743-711d-915e-2f4199a32c53"
+    }
+  ]
+}
